@@ -1,6 +1,24 @@
 ---
-share: "true"
+title: Scheduler 原理
+description: ""
+keywords:
+  - react
+  - react-scheduler
+  - sourcecode
+tags:
+  - 开发
+  - 前端
+  - react
+  - 源码
+slug: parse-react-scheduler
+lang: cn
+author: zhangchuachua
+created_at: 2025-01-22 22:11
+last_updated: 2025-02-07 00:12
+share: true
 ---
+
+![photo by Yoksel 🌿 Zok(https://unsplash.com/@yoksel?utm_source=templater_proxy&utm_medium=referral) on Unsplash](https://images.unsplash.com/photo-1704049492643-e4d894759972?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDU1OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg4NTgxODB8&ixlib=rb-4.0.3&q=85&w=1024&h=1024)
 
 参考：
 
