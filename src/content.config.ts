@@ -4,6 +4,7 @@ import { glob } from 'astro/loaders';
 const seoSchema = z.object({
     title: z.string().min(5).max(120).optional(),
     description: z.string().min(15).max(160).optional(),
+    keywords: z.array(z.string()).optional(),
     image: z
         .object({
             src: z.string(),
@@ -26,6 +27,20 @@ const blog = defineCollection({
     })
 });
 
+const zcc = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/zcc' }),
+    schema: z.object({
+        title: z.string(),
+        tags: z.array(z.string()).default([]),
+        slug: z.string(),
+        lang: z.string().default('cn'),
+        publish_date: z.coerce.date(),
+        update_date: z.coerce.date().optional(),
+        share: z.boolean().default(true),
+        seo: seoSchema.optional()
+    })
+})
+
 const pages = defineCollection({
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/pages' }),
     schema: z.object({
@@ -45,4 +60,4 @@ const projects = defineCollection({
     })
 });
 
-export const collections = { blog, pages, projects };
+export const collections = { blog, pages, projects, zcc };

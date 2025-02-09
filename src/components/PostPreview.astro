@@ -2,11 +2,27 @@
 import { type CollectionEntry } from 'astro:content';
 import ArrowRight from '../icons/ArrowRight.astro';
 import FormattedDate from './FormattedDate.astro';
+import Id from '@/pages/blog/[id].astro';
+import { ostring } from 'astro:schema';
 
-type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h2' | 'h3' };
+type Props = { post: CollectionEntry<'blog' | 'zcc'>; class?: string; headingLevel?: 'h2' | 'h3' };
 
 const { post, class: className, headingLevel = 'h2' } = Astro.props;
-const { title, publishDate, updatedDate, excerpt } = post.data;
+const { title } = post.data;
+if (post.id === 'react-scheduler') {
+    console.log(post);
+}
+let description;
+let publish_date;
+let update_date;
+if ('publishDate' in post.data) {
+    description = post.data.excerpt;
+    publish_date = post.data.publishDate;
+    update_date = post.data.updatedDate;
+} else {
+    publish_date = post.data.publish_date;
+    update_date = post.data.update_date;
+}
 const TitleTag = headingLevel;
 ---
 
@@ -18,19 +34,19 @@ const TitleTag = headingLevel;
             {title}
         </TitleTag>
         <div class="mt-1 text-sm leading-normal">
-            <FormattedDate date={publishDate} />
+            <FormattedDate date={publish_date} />
             {
-                updatedDate && (
+                update_date && (
                     <>
                         {' '}
                         <span>
-                            (Updated on <FormattedDate date={updatedDate} />)
+                            (Updated on <FormattedDate date={update_date} />)
                         </span>
                     </>
                 )
             }
         </div>
-        {excerpt && <div class="mt-3 text-sm leading-normal">{excerpt}</div>}
+        {description && <div class="mt-3 text-sm leading-normal">{description}</div>}
     </div>
     <div class="hidden font-serif italic opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
         Read Post <ArrowRight class="fill-current w-4 h-4" />

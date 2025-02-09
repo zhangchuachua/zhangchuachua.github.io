@@ -13,20 +13,20 @@ tags:
 slug: parse-react-scheduler
 lang: cn
 author: zhangchuachua
-created_at: 2025-01-22 22:11
-last_updated: 2025-02-07 00:12
+publish_date: 2025-01-22 22:11
+update_date: 2025-02-07 00:12
 share: true
 ---
 
-![photo by Yoksel 🌿 Zok(https://unsplash.com/@yoksel?utm_source=templater_proxy&utm_medium=referral) on Unsplash](https://images.unsplash.com/photo-1704049492643-e4d894759972?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDU1OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg4NTgxODB8&ixlib=rb-4.0.3&q=85&w=1024&h=1024)
+<img src="https://images.unsplash.com/photo-1704049492643-e4d894759972?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDU1OTF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Mzg4NTgxODB8&ixlib=rb-4.0.3&q=85&w=1024&h=1024" alt="photo by Yoksel 🌿 Zok(https://unsplash.com/@yoksel?utm_source=templater_proxy&utm_medium=referral) on Unsplash" width="1024" height="1024" />
 
 参考：
 
 1. [https://github.com/lizuncong/mini-react](https://github.com/lizuncong/mini-react)
 
-## scheduleCallback 用于生成 task，并且区分 task 分别压入 taskQueue 或 timerQueue 并安排宏任务
+## `scheduleCallback` 用于生成 task，并且区分 task 分别压入 taskQueue 或 timerQueue 并安排宏任务
 
-```JavaScript
+```js
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 function unstable_scheduleCallback(priorityLevel, callback, options) {
 	// currentTime 优先使用 performance.now() 然后才是 Date.now()
@@ -142,7 +142,7 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
 > 
 > A: 这个问题在 workLoop 和 requestHostTimeout 代码中得到了解释；因为 requestHostTimeout 函数其实就是注册了一个 timeout 将 timerQueue 中的延时任务放到 taskQueue 中去；而 workLoop 中本身就会去做这些操作；那么如果 taskQueue 有任务，就一定会去注册宏任务执行 workLoop，执行 workLoop 就会去管理 timerQueue，所以 taskQueue 有值时不需要注册 timeout；
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 function requestHostCallback(callback) {
 	// 为全局变量 scheduledHostCallback 赋值，其实这里的 callback 就是 flushWork
@@ -157,7 +157,7 @@ function requestHostCallback(callback) {
 }
 ```
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 // 为了更好理解，这里的顺序做了更改，应该 performWorkUntilDeadline 函数声明在上面
 
@@ -216,7 +216,7 @@ const performWorkUntilDeadline = () => {
 > 1. [https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout#%E5%BB%B6%E6%97%B6%E6%AF%94%E6%8C%87%E5%AE%9A%E5%80%BC%E6%9B%B4%E9%95%BF%E7%9A%84%E5%8E%9F%E5%9B%A0](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/setTimeout#%E5%BB%B6%E6%97%B6%E6%AF%94%E6%8C%87%E5%AE%9A%E5%80%BC%E6%9B%B4%E9%95%BF%E7%9A%84%E5%8E%9F%E5%9B%A0) setTimeout 延时比指定值更长的原因
 > 2. scheduledHostCallback 其实就是 flushWork ，在 reactv19 中直接去掉了 scheduledHostCallback 这个全局变量，直接执行 flushWork
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 // flushWork 就是 scheduleCallback 中使用 requestHostCallback 注册的
 // 在 performWorkUntilDeadline 可以看到两个参数，分别是 true 和执行 flushWork 时的时间；
@@ -256,7 +256,7 @@ function flushWork(hasTimeRemaining, initialTime) {
 > 
 > A：是的在 workLoop 中将会使用 advanceTimers 去处理 timerQueue
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 // 第一个参数一直为 true，第二个参数是执行 flushWork 时的时间
 function workLoop(hasTimeRemaining, initialTime) {
@@ -342,7 +342,7 @@ function unstable_cancelCallback(task) {
 
 ### requestHostTimeout 用于注册一个 setTimeout 管理 timerQueue
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 // 第一个参数一般都是 handleTimeout，第二个参数就是 任务的开始时间 - 当前时间，也就是中间的差值
 function requestHostTimeout(callback, ms) {
@@ -359,7 +359,7 @@ function requestHostTimeout(callback, ms) {
 
 ### handleTimeout 处理 timerQueue 并重新安排 task 或 timer
 
-```TypeScript
+```ts
 // 位于 scheduler/src/forks/Scheduler.js 代码有所精简
 function handleTimeout(currentTime) {
   isHostTimeoutScheduled = false;
@@ -412,7 +412,7 @@ function advanceTimers(currentTime) {
 
 ### cancelHostTimeout 取消用于处理 timerQueue 的 setTimeout
 
-```TypeScript
+```ts
 function cancelHostTimeout() {
   localClearTimeout(taskTimeoutID);// localClearTimeout 直接理解为 clearTimeout 即可
   taskTimeoutID = -1;
@@ -420,8 +420,6 @@ function cancelHostTimeout() {
 ```
 
 ---
-
-  
 
 [https://www.processon.com/diagraming/6772bf173df84d14924a8992](https://www.processon.com/diagraming/6772bf173df84d14924a8992)
 
