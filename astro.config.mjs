@@ -3,17 +3,16 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import remarkCallout from '@r4ai/remark-callout';
+import { highlightComment } from './src/utils/shiki/highlight-comment';
+import { setCodeLength } from './src/utils/shiki/setCodeLength';
 
 import react from '@astrojs/react';
-import { rehypeCodeLength } from './src/utils/unified/rehype-code-length.ts';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://zhangchuachua.github.io',
     integrations: [
-        mdx({
-            rehypePlugins: [rehypeCodeLength]
-        }),
+        mdx({}),
         sitemap(),
         tailwind({
             applyBaseStyles: false
@@ -22,9 +21,9 @@ export default defineConfig({
     ],
     markdown: {
         remarkPlugins: [remarkCallout],
-        rehypePlugins: [rehypeCodeLength],
         shikiConfig: {
-            wrap: true
+            wrap: true,
+            transformers: [setCodeLength, highlightComment]
         }
     }
 });
