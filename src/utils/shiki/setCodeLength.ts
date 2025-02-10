@@ -8,7 +8,6 @@ export const setCodeLength: ShikiTransformer = {
         ctx.properties['data-line-length'] = ctx.children.length;
     },
     pre(ctx) {
-        console.log(this.options.structure);
         const isInline = this.options.structure === 'inline';
         if (isInline) return;
         ctx.children.forEach((child) => {
