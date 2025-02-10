@@ -5,7 +5,7 @@ interface Props {
     [key: `data-${string}`]: any;
 }
 
-const { class: className = '' } = Astro.props;
+const { class: className = '', ...props } = Astro.props;
 const isCodeBlock = 'data-code-block' in Astro.props;
 let isLongCode = false;
 if (isCodeBlock) {
@@ -14,7 +14,7 @@ if (isCodeBlock) {
 }
 ---
 
-<code {...Astro.props} class:list={[className, isLongCode && 'max-h-[400px]']}><slot /></code>
+<code {...props} class:list={[className, isLongCode && 'max-h-[400px]']}><slot /></code>
 <!-- <pre class={`language-${lang || 'text'} ${isLongCode ? 'long-code collapsed' : ''}`}>
     <code set:html={code} />
   </pre>

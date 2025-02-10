@@ -6,7 +6,6 @@ export const highlightComment: ShikiTransformer = {
     tokens(tokens) {
         for (let i = 0; i < tokens.length; i++) {
             if (!this) return;
-            console.log(this.options.lang);
             if (!supportedLang.has(this.options.lang)) return;
             const token = tokens[i];
             token.forEach((line) => {
