@@ -30,6 +30,9 @@ export default defineConfig({
             shiki: {
                 transformers: [highlightComment]
             },
+            styleOverrides: {
+                codeFontSize: 'inherit',
+            },
             themes: ['github-dark'],
             rehypePlugins: [rehypeSetCodeClass],
             plugins: [pluginCollapsibleSections(), pluginLineNumbers()]

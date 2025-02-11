@@ -42,6 +42,10 @@ module.exports = {
                 },
                 DEFAULT: {
                     css: {
+                        '.expressive-code': {
+                            marginTop: '1.7142857em',
+                            marginBottom: '1.7142857em',
+                        },
                         a: {
                             fontWeight: 'normal',
                             textDecoration: 'underline',
