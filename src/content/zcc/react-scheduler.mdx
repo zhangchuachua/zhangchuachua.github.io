@@ -126,7 +126,9 @@ function unstable_scheduleCallback(priorityLevel, callback, options) {
 }
 ```
 
-> [!important] 重点：
+<pre><code>const a = 1;</code></pre>
+
+> [!IMPORTANT]+ 重点：
 > 
 > 1. scheduleCallback 这个函数其实就是创建一个 task 然后根据是否时延时任务放到不同的堆中；
 > 2. 任务分为常规任务和延迟任务两种；延迟任务就是设置了 delay 的任务；
