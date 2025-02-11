@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: ['Inter Variable', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader Variable', ...defaultTheme.fontFamily.serif]
+            code: ['JetBrains Mono Variable', ...defaultTheme.fontFamily.mono]
         },
         extend: {
             textColor: {
@@ -44,7 +44,7 @@ module.exports = {
                     css: {
                         '.expressive-code': {
                             marginTop: '1.7142857em',
-                            marginBottom: '1.7142857em',
+                            marginBottom: '1.7142857em'
                         },
                         a: {
                             fontWeight: 'normal',

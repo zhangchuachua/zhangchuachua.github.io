@@ -26,8 +26,9 @@ share: true
 
 ## `scheduleCallback` 用于生成 task，并且区分 task 分别压入 taskQueue 或 timerQueue 并安排宏任务
 
-```javascript title="ok.ts" collapse={1-5}
-// ?位于 scheduler/src/forks/Scheduler.js 代码有所精简
+```javascript collapse={1-5}
+// scheduler/src/forks/Scheduler.js
+// 代码有所精简
 function unstable_scheduleCallback(priorityLevel, callback, options) {
 	// currentTime 优先使用 performance.now() 然后才是 Date.now()
   var currentTime = getCurrentTime();

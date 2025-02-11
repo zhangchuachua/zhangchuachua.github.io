@@ -25,14 +25,18 @@ export default defineConfig({
             defaultProps: {
                 wrap: true,
                 showLineNumbers: true,
-                collapseStyle: 'collapsible-auto'
+                collapseStyle: 'collapsible-start',
             },
             shiki: {
                 transformers: [highlightComment]
             },
             styleOverrides: {
                 codeFontSize: 'inherit',
+                uiFontSize: 'inherit',// 因为使用了 tailwind 的 typography 插件进行格式化，所以这里不再使用 rem 而是使用 inherit 继承，保证一致性
+                codeFontFamily: 'inherit',
+                uiFontFamily: 'inherit',
             },
+            useStyleReset: false,
             themes: ['github-dark'],
             rehypePlugins: [rehypeSetCodeClass],
             plugins: [pluginCollapsibleSections(), pluginLineNumbers()]
