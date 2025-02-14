@@ -11,9 +11,10 @@ import { remarkSetCodeCollapse } from './src/utils/unified/remark-set-code-colla
 import { rehypeSetCodeClass } from './src/utils/unified/rehype-set-code-class';
 import { remarkCallout } from '@r4ai/remark-callout';
 
-// https://astro.build/config
+
+// https://astro.build/confighttps://zhangchuachua.github.io
 export default defineConfig({
-    site: 'https://zhangchuachua.github.io',
+    site: "https://zhangchuachua.github.io",
     integrations: [
         sitemap(),
         tailwind({
@@ -25,16 +26,16 @@ export default defineConfig({
             defaultProps: {
                 wrap: true,
                 showLineNumbers: true,
-                collapseStyle: 'collapsible-start',
+                collapseStyle: 'collapsible-start'
             },
             shiki: {
                 transformers: [highlightComment]
             },
             styleOverrides: {
                 codeFontSize: 'inherit',
-                uiFontSize: 'inherit',// 因为使用了 tailwind 的 typography 插件进行格式化，所以这里不再使用 rem 而是使用 inherit 继承，保证一致性
+                uiFontSize: 'inherit', // 因为使用了 tailwind 的 typography 插件进行格式化，所以这里不再使用 rem 而是使用 inherit 继承，保证一致性
                 codeFontFamily: 'inherit',
-                uiFontFamily: 'inherit',
+                uiFontFamily: 'inherit'
             },
             useStyleReset: false,
             themes: ['github-dark'],
@@ -44,7 +45,7 @@ export default defineConfig({
         mdx()
     ],
     markdown: {
-        remarkPlugins: [remarkCallout, remarkSetCodeCollapse],
+        remarkPlugins: [remarkCallout, remarkSetCodeCollapse]
         // rehypePlugins: [rehypeSetCodeClass]// 这里插入的组件将会在 expressive-code 之前被执行
     }
 });

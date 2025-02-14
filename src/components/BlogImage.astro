@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:components';
+import { ImageMetadata } from 'astro';
+import { isRemoteUrl } from '../utils/link';
+
+interface Props {
+    alt?: string;
+    src: string | ImageMetadata;
+}
+
+const {alt, src} = Astro.props;
+
+
+// 图片来源：远程图片，public 目录下的图片，src 目录下的图片
+// 远程图片：src 不做修改；如果 URL 中包含宽高，获取宽高，并直接返回；
+// public 目录下的图片；url 不做修改；如果 URL 中包含宽高，获取
+
+const getWidthAndHeight = (url: string) => {
+    const {searchParams} = new URL(url, Astro.site);
+    const originKeys = [
+        ['originWidth', 'originHeight'],
+        ['origin_width', 'origin_height'],
+        ['width', 'height'],
+        ['w', 'h']
+    ]
+    const setKeys = [
+        ['width', 'height'],
+        ['w', 'h']
+    ]
+
+    const originInfo: number[] = [];
+    const setInfo: number[] = [];
+
+    originKeys.forEach(([width, height]) => {
+        if (!searchParams.has(width) && !searchParams.has(height)) return;
+        if (originInfo[0] && originInfo[1]) return;
+        if(searchParams.has(width)) originInfo[0] = Number(searchParams.get(width) as string);
+        if(searchParams.has(height)) originInfo[1] = Number(searchParams.get(height) as string);
+    })
+
+    setKeys.forEach(([width, height]) => {
+        if (!searchParams.has(width) && !searchParams.has(height)) return;
+        if (setInfo[0] && setInfo[1]) return;
+        if(searchParams.has(width)) setInfo[0] = Number(searchParams.get(width) as string);
+        if(searchParams.has(height)) setInfo[1] = Number(searchParams.get(height) as string);
+    })
+}
+
+if (typeof src === 'string') {
+    switch (true) {
+        case isRemoteUrl(src): {
+
+        }
+    }
+}
+
+---
+
+img
+
+<script>
+
+    import mediumZoom from 'medium-zoom';
+
+</script>
