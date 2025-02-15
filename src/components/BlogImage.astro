@@ -1,65 +1,119 @@
 ---
-import { Image } from 'astro:components';
-import { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import type { LocalImageProps, RemoteImageProps } from 'astro:assets';
 import { isRemoteUrl } from '../utils/link';
 
-interface Props {
-    alt?: string;
-    src: string | ImageMetadata;
-}
-
-const {alt, src} = Astro.props;
-
-
-// 图片来源：远程图片，public 目录下的图片，src 目录下的图片
-// 远程图片：src 不做修改；如果 URL 中包含宽高，获取宽高，并直接返回；
-// public 目录下的图片；url 不做修改；如果 URL 中包含宽高，获取
+type Props = astroHTML.JSX.ImgHTMLAttributes | LocalImageProps | RemoteImageProps;
 
 const getWidthAndHeight = (url: string) => {
-    const {searchParams} = new URL(url, Astro.site);
+    const { searchParams } = new URL(url, Astro.site);
     const originKeys = [
         ['originWidth', 'originHeight'],
         ['origin_width', 'origin_height'],
         ['width', 'height'],
         ['w', 'h']
-    ]
+    ];
     const setKeys = [
         ['width', 'height'],
         ['w', 'h']
-    ]
+    ];
 
     const originInfo: number[] = [];
     const setInfo: number[] = [];
 
     originKeys.forEach(([width, height]) => {
-        if (!searchParams.has(width) && !searchParams.has(height)) return;
-        if (originInfo[0] && originInfo[1]) return;
-        if(searchParams.has(width)) originInfo[0] = Number(searchParams.get(width) as string);
-        if(searchParams.has(height)) originInfo[1] = Number(searchParams.get(height) as string);
-    })
+        if (!originInfo[0] && searchParams.has(width)) {
+            originInfo[0] = Number(searchParams.get(width) as string);
+        }
+        if (!originInfo[1] && searchParams.has(height)) {
+            originInfo[1] = Number(searchParams.get(height) as string);
+        }
+    });
 
     setKeys.forEach(([width, height]) => {
-        if (!searchParams.has(width) && !searchParams.has(height)) return;
-        if (setInfo[0] && setInfo[1]) return;
-        if(searchParams.has(width)) setInfo[0] = Number(searchParams.get(width) as string);
-        if(searchParams.has(height)) setInfo[1] = Number(searchParams.get(height) as string);
-    })
-}
+        if (!setInfo[0] && searchParams.has(width)) {
+            setInfo[0] = Number(searchParams.get(width) as string);
+        }
+        if (!setInfo[1] && searchParams.has(height)) {
+            setInfo[1] = Number(searchParams.get(height) as string);
+        }
+    });
+
+    switch (true) {
+        // setInfo 宽高都存在，那么直接返回
+        case typeof setInfo[0] === 'number' && typeof setInfo[1] === 'number': {
+            return [setInfo[0], setInfo[1]] as const;
+        }
+        // setInfo 不一定宽高都存在，那么 originInfo 如果都不存在，那么不能计算出准确的宽高，返回 undefined
+        case typeof originInfo[0] !== 'number' || typeof originInfo[1] !== 'number': {
+            return undefined;
+        }
+        // 此时 originInfo 宽高都存在，如果 setInfo 宽高都不存在，那么直接返回 originInfo
+        case typeof setInfo[0] !== 'number' || typeof setInfo[1] !== 'number': {
+            return [originInfo[0], originInfo[1]] as const;
+        }
+        default: {
+            const ratio = originInfo[0] / originInfo[1];
+            if (typeof setInfo[0] === 'number') {
+                return [setInfo[0], setInfo[1] * ratio] as const;
+            }
+            return [setInfo[0] * ratio, setInfo[1]] as const;
+        }
+    }
+};
+
+let { src } = Astro.props;
+let options: astroHTML.JSX.ImgHTMLAttributes | LocalImageProps | RemoteImageProps = Astro.props;
+
+// BlogImage 只会在博客中使用，
+// 1. ![](/images/xxx) public 文件 => img
+// 2. ![](../../assets) 引入图片 => Image
+// 3. ![](https://...) 远程图片 => img
+// 4. <Image src="https://" inferSize /> Image
+// 5. <Image src="xxx" width={} height={} /> Image
+// 6. <img src="..." width="" height="" /> img
 
 if (typeof src === 'string') {
+    const wh = getWidthAndHeight(src);
     switch (true) {
-        case isRemoteUrl(src): {
-
-        }
+        case !!wh:
+            const [width, height] = wh;
+            options = {
+                ...Astro.props,
+                width,
+                height
+            };
+            break;
+        case typeof options.width !== 'undefined' && typeof options.height !== 'undefined':
+            break;
+        case isRemoteUrl(src):
+            options = {
+                ...Astro.props,
+                inferSize: true
+            };
+            break;
+        default:
+            break;
     }
 }
 
+let renderImage = true;
+switch (true) {
+    case typeof src === 'object':
+        break;
+    case typeof options.width !== 'undefined' && typeof options.height !== 'undefined':
+        break;
+    case 'inferSize' in options && options.inferSize:
+        break;
+    default:
+        renderImage = false;
+        break;
+}
 ---
 
-img
+{renderImage ? <Image {...(options as LocalImageProps | RemoteImageProps)} data-zoomable /> : <img {...(options as astroHTML.JSX.ImgHTMLAttributes)} data-zoomable />}
 
 <script>
-
     import mediumZoom from 'medium-zoom';
-
+    mediumZoom('[data-zoomable]')
 </script>

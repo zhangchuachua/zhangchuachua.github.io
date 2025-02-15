@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
@@ -67,7 +66,6 @@ const { Content } = await render(post);
             </div>
         </header>
 
-        <Image src="/images/react_scheduler.png" alt="" width="4580" height="1397" format='webp' />
         <div class="max-w-none prose prose-dante">
             <Content components={{ img: BlogImage }} />
         </div>

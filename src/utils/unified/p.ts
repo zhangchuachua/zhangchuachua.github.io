@@ -18,7 +18,7 @@ const a = await p.process(`nihao
 
 ![123](../../imgs/123.png)
 
-<img src="../../imgs/about.jpeg" alt="about" />
+<img src="../../assets/about.jpeg" alt="about" />
 
 ## zhenbucuo`);
 
