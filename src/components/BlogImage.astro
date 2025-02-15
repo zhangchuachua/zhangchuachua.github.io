@@ -112,8 +112,3 @@ switch (true) {
 ---
 
 {renderImage ? <Image {...(options as LocalImageProps | RemoteImageProps)} data-zoomable /> : <img {...(options as astroHTML.JSX.ImgHTMLAttributes)} data-zoomable />}
-
-<script>
-    import mediumZoom from 'medium-zoom';
-    mediumZoom('[data-zoomable]')
-</script>
