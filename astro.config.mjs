@@ -1,51 +1,32 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import unocss from 'unocss/astro'
+import icon from "astro-icon";
+import pagefind from "astro-pagefind";
 import expressiveCode from 'astro-expressive-code';
-import react from '@astrojs/react';
-import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers';
-import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections';
-import { highlightComment } from './src/utils/shiki/highlight-comment';
-import { remarkSetCodeCollapse } from './src/utils/unified/remark-set-code-collapse';
-import { rehypeSetCodeClass } from './src/utils/unified/rehype-set-code-class';
-import { remarkCallout } from '@r4ai/remark-callout';
+import { BASE_URL } from './src/config'
+import { remarkPlugins, rehypePlugins } from './plugins';
+import { highlightComment } from './plugins/highlighComment'
 
 
-// https://astro.build/confighttps://zhangchuachua.github.io
+// https://astro.build/config
 export default defineConfig({
-    site: "https://zhangchuachua.github.io",
-    integrations: [
-        sitemap(),
-        tailwind({
-            applyBaseStyles: false,
-            nesting: true
-        }),
-        react(),
-        expressiveCode({
-            defaultProps: {
-                wrap: true,
-                showLineNumbers: true,
-                collapseStyle: 'collapsible-start'
-            },
-            shiki: {
-                transformers: [highlightComment]
-            },
-            styleOverrides: {
-                codeFontSize: 'inherit',
-                uiFontSize: 'inherit', // 因为使用了 tailwind 的 typography 插件进行格式化，所以这里不再使用 rem 而是使用 inherit 继承，保证一致性
-                codeFontFamily: 'inherit',
-                uiFontFamily: 'inherit'
-            },
-            useStyleReset: false,
-            themes: ['github-dark'],
-            rehypePlugins: [rehypeSetCodeClass],
-            plugins: [pluginCollapsibleSections(), pluginLineNumbers()]
-        }),
-        mdx()
-    ],
-    markdown: {
-        remarkPlugins: [remarkCallout, remarkSetCodeCollapse]
-        // rehypePlugins: [rehypeSetCodeClass]// 这里插入的组件将会在 expressive-code 之前被执行
-    }
+  site: BASE_URL,
+  integrations: [
+    expressiveCode({
+      shiki: {
+        transformers: [highlightComment]
+      },
+    }),
+    mdx(),
+    sitemap({ filter: page => ['/tags/', '/categories/'].map(PATH => page.startsWith(BASE_URL + PATH)).includes(false) }),
+    unocss({ injectReset: true, configFile: '/uno.config.ts' }),
+    icon(),
+    pagefind(),
+  ],
+  markdown: {
+    remarkPlugins,
+    rehypePlugins
+  }
 });

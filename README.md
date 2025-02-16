@@ -1,92 +1,98 @@
-# Dante - Astro & Tailwind CSS Theme by justgoodui.com
+# Antares
 
-Dante is a single-author blog and portfolio theme for Astro.js. Featuring a minimal, slick, responsive and content-focused design. For more Astro.js themes please check [justgoodui.com](https://justgoodui.com/).
+基于Astro的博客模板  
 
-![Dante Astro.js Theme](public/dante-preview.jpg)
+**[Github](https://github.com/coderxi1/astro-antares) | [演示页面](https://antares.coderxi.com)**
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JustGoodUI/dante-astro-theme)
+## 💻 Installation
 
-If you click this☝️ button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+- Git  
+  ```
+  git clone https://github.com/coderxi1/astro-antares blog
+  ```
+- Astro
+  ```
+  pnpm create astro@latest -- --template coderxi1/astro-antares
+  ```
 
-## Theme Features:
+### 💻 Start
 
-- ✅ Dark and light color mode
-- ✅ Hero section with bio
-- ✅ Portfolio collection
-- ✅ Pagination support
-- ✅ Post tags support
-- ✅ Subscription form
-- ✅ View transitions
-- ✅ Tailwind CSS
-- ✅ Mobile-first responsive layout
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## Template Integrations
-
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/mdx - https://docs.astro.build/en/guides/markdown-content/
-- @astrojs/rss - https://docs.astro.build/en/guides/rss/
-
-## Project Structure
-
-Inside of Dante Astro theme, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── data/
-│   ├── icons/
-│   ├── layouts/
-│   ├── pages/
-│   ├── styles/
-│   └── utils/
-├── astro.config.mjs
-├── package.json
-├── README.md
-├── tailwind.config.cjs
-└── tsconfig.json
+- 移动到博客目录下，然后安装依赖并开始开发
+```
+cd [/path/to/]
+pnpm install
+pnpm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎉 Features
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro (`.astro`) components.
+- ✅**Simple style** ：简约！简约！还是TMD简约！
+- ✅**Dark Mode** ：夜间模式 `<html class="dark">`
+- ✅**Responsive Design** ：基于 `unocss` 的响应式设计，适配不同设备。
+- ✅**Attached sitemap** ：自带站点地图/订阅 `rss.xml` `feed.xml` `baidusitemap.xml` `sitemap-index.xml`
+- ✅**Easy-to-secondary-develop** ：**快速**、**高效**地创建自定义页面，**自由**地调整侧边栏卡片  
+- ✅**Easy-to-use** ：大部分需要改动的配置集成在`src/config.ts`  
+- ✅**Post-Frontmatter** ：更丰富的frontmatter，包括**置顶功能**、**加密功能**等。
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## 🖥️ Create Page
 
-Any static assets, like images, can be placed in the `public/` directory.
+### .astro
+- `src/pages/archives.astro`
+  ```astro
+  <PageLayout
+    title="归档"
+    titleIcon="mdi:archive"
+    asideCards={['CardRecentPost','CardCategroies','CardTagCloud']}
+  >
+    <PostListSimple posts={posts}/>
+  </PageLayout>
+  ```
+### .mdx
+- `src/pages/archives.mdx`
+  ```mdx
+  ---
+  layout: '@/layouts/PageLayout.astro'
+  asideCards: 
+    - CardRecentPost
+    - CardCategroies
+    - CardTagCloud
+  title: '归档'
+  titleIcon: 'mdi:archive'
+  ---
 
-## Astro.js Commands
+  import posts from '@/content/posts'
+  import PostListSimple from '@/components/PostListSimple.astro'
 
-All commands are run from the root of the project, from a terminal:
+  <PostListSimple posts={posts}/>
+  ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## ⚙ Configuration
 
-## Want to learn more about Astro.js?
+### config.ts
+- `src/config.ts`
+  | **配置**               | **描述**                                                                                    |
+  |--------------------|-------------------------------------------------------------------------------------------------|
+  | **SITE_INFO**       | 网站的基本信息，如标题、描述等。                                                                  |
+  | **POST_PAGE_SIZE**  | 每页显示的文章或内容数量。                                                                      |
+  | **DEFAULT_FRONTMATTER** | 默认的文章或页面元数据配置，如标题、日期、标签等。                                             |
+  | **SIDEBAR_SETTINGS** | 配置网站侧边栏的显示内容，如导航、搜索框等。                                                      |
+  | **ASIDE_CARDS**     | 侧边显示的小卡片或附加信息区域。                                                                   |
+  | **NAV_ITEMS**       | 导航栏中的链接项目，如主页、博客等。                                                                  |
+  | **FOOTER**          | 页脚部分的内容，如版权信息、网站链接等。                                                              |
+  | **FRIEND_LINK**     | 友情链接，指向其他相关网站的链接。                                                                    |
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credits
-
-- Demo content generate with [Chat GPT](https://chat.openai.com/)
-- Images for demo content from [Unsplash](https://unsplash.com/)
-
-## Astro Themes by Just Good UI
-
-- [Ovidius](https://github.com/JustGoodUI/ovidius-astro-theme) is a free single author blog theme.
-
-## License
-
-Licensed under the [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) license.
+### Post-Frontmatter
+- `posts/*.md`
+  | 字段        | 内容                                   | 可选     | 描述                            |
+  |-------------|---------------------------------------|----------|--------------------------------|
+  | title       | `'Antares 文档'`                       | **必需**     | 标题                       |
+  | **titleIcon**   | `'/favicon.svg'`                   | 可选     | 标题图标                        |
+  | **titleColor**  | `'#0998DF'`                        | 可选     | 标题渐变颜色                    |
+  | publishDate | `'2024-12-19'`                         | 可选     | 发布时间 (默认使用文件创建时间)   |
+  | updatedDate | `'2024-12-19'`                         | 可选     | 更新时间 (默认使用文件修改时间)   |
+  | tags        | `['Astro', 'TagD']`                    | 可选     | 标签                            |
+  | categories  | `['Astro', 'Demo']`                    | 可选     | 分类                            |
+  | description | `'暂无描述.'`                           | 可选     | 文章描述                        |
+  | **top**     | `1`                                     | 可选     | 置顶 (数字越大越靠前)            |
+  | **password**| `123456`                                | 可选     | 为文章设置密码                   |
+  | **bodyJoin**| `./README.md`                            | 可选     | 提供文件路径 拼接另一个markdown文档 |

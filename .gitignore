@@ -19,4 +19,12 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-.idea
+
+# jetbrains setting folder
+.idea/
+
+# vscode setting folder
+.vscode/
+
+# yarn folder
+.yarn/

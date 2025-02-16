@@ -1,41 +1,106 @@
 ---
-import { ClientRouter } from 'astro:transitions';
-import BaseHead, { type Props as HeadProps } from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Nav from '../components/Nav.astro';
+import "@/styles/global.scss";
+import HeadFragment from "@/components/fragment/HeadFragment.astro";
+import FooterFragment from "@/components/fragment/FooterFragment.astro";
+import If from "@/components/atomic/If.astro";
+import NavBar from "@/components/NavBar.astro";
+import { SITE_INFO } from "@/config";
+import { ensuredCard, type EnsuredCardParams } from "@/components/AsideCards";
+import { Icon } from "astro-icon/components";
+import Drawer from "@/components/widget/Drawer.astro";
+import SideBar from "@/components/SideBar.astro";
+const { language: lang, title: deafultTitle } = SITE_INFO;
 
-export type Props = HeadProps & { showHeader?: boolean };
-
-const { showHeader = true, ...head } = Astro.props;
+type Props = {
+  frontmatter?: Props; //for .mdx layout
+} & {
+  subtitle?: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  asideOff?: boolean;
+  asideCards?: EnsuredCardParams[];
+};
+const {
+  subtitle,
+  title = subtitle ? `${subtitle} | ${deafultTitle}` : deafultTitle,
+  description = "",
+  image = "",
+  asideOff = false,
+  asideCards,
+} = Astro.props.frontmatter || Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="antialiased break-words">
-<head>
-    <BaseHead {...head} />
-    <script>
-        if (localStorage.theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        }
-    </script>
-    <ClientRouter />
-</head>
-<body class="bg-main text-main">
-<div class="flex flex-col min-h-screen px-4 md:px-8">
-    <Nav />
-    {showHeader &&
-        <Header />}
-    <main class="grow w-full max-w-3xl mx-auto">
-        <slot />
+<html {lang} >
+  <head>
+    <HeadFragment {title} {description} {image} />
+    <slot name="head" />
+  </head>
+  <body
+    class="flex flex-col bg-global text-textPrim font-sans h-screen w-screen of-x-hidden antialiased break-words"
+  >
+    <header class="w-full h15 min-h15">
+      <NavBar>
+        <a id="drawer-sidebar-ctrl" class="ml2"
+          ><Icon class="text-2xl" name="mdi:menu" /></a
+        >
+        <script>
+          //@ts-nocheck
+          document.addEventListener("DOMContentLoaded", () => {
+            const drawerSidebar = document.getElementById("drawer-sidebar");
+            const htmlBody = document.documentElement.querySelector("body");
+            document
+              .getElementById("drawer-sidebar-ctrl")
+              .addEventListener("click", () => {
+                drawerSidebar.show();
+                htmlBody.style.overflowY = "hidden";
+              });
+            drawerSidebar.addEventListener("hide", () => {
+              htmlBody.style.overflowY = "";
+            });
+          });
+        </script>
+      </NavBar>
+      <Drawer id="drawer-sidebar">
+        <SideBar />
+      </Drawer>
+    </header>
+    <main
+      class="wfull flex-1 max-w-screen-xl mx-auto my8 flex max-w[calc(100vw-12px)]"
+    >
+      <If condition={asideOff}>
+        <div class="wfull animate-move-up" data-pagefind-body>
+          <slot />
+        </div>
+      </If>
+      <If condition={!asideOff}>
+        <div class="wfull hidden lg:block lg:max-w28% lg:mr2">
+          <div class="sticky top-4">
+            <slot name="aside">
+              <aside>
+                {
+                  asideCards
+                    ?.map(ensuredCard)
+                    .map(([Card, props]) => <Card {...props} />)
+                }
+              </aside>
+            </slot>
+          </div>
+        </div>
+        <div class="w-full lg:max-w71% animate-move-up" data-pagefind-body>
+          <slot />
+        </div>
+      </If>
     </main>
-    <Footer />
-</div>
-</body>
+    <footer class="w-full bg-normal shadow-md py8 text-center">
+      <FooterFragment />
+    </footer>
+  </body>
 </html>
 
 <script>
-    import mediumZoom from 'medium-zoom';
+  import mediumZoom from "medium-zoom";
 
-    mediumZoom('[data-zoomable]');
+  mediumZoom("[data-zoomable]");
 </script>
