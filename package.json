@@ -50,5 +50,6 @@
     "overrides": {
       "esbuild": "0.24.0"
     }
-  }
+  },
+  "packageManager": "pnpm@9.1.4"
 }
