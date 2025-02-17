@@ -60,6 +60,9 @@ importers:
       '@types/sanitize-html':
         specifier: ^2
         version: 2.13.0
+      '@unocss/preset-web-fonts':
+        specifier: ^65.5.0
+        version: 65.5.0
       '@unocss/reset':
         specifier: ^65.5.0
         version: 65.5.0

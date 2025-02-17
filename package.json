@@ -27,6 +27,7 @@
     "@iconify-json/mdi": "^1.2.1",
     "@types/crypto-js": "^4",
     "@types/sanitize-html": "^2",
+    "@unocss/preset-web-fonts": "^65.5.0",
     "@unocss/reset": "^65.5.0",
     "astro-expressive-code": "^0.40.0",
     "astro-icon": "1.1.5",
