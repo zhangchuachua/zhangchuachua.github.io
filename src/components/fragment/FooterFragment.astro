@@ -1,18 +1,24 @@
 ---
-import ShieldsBadge from '@/components/widget/ShieldsBadge.astro'
-import { SITE_INFO, FOOTER } from '@/config'
-const { startYear, endYear, author } = SITE_INFO
+import ShieldsBadge from "@/components/widget/ShieldsBadge.astro";
+import { SITE_INFO, FOOTER } from "@/config";
+const { startYear, endYear, author } = SITE_INFO;
 ---
 
 <div class="text-sm my1em">
-  Copyright © {startYear} ~ {endYear} By {author}. All rights reserved.
+  <a
+    href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    target="_blank"
+    rel="nofollow noreferrer">CC BY-NC-SA 4.0</a
+  > 2025-PRESENT © ZCC
 </div>
 <div>
-  {FOOTER.badgeGroups.map(badgeGroup=>(
-    <div class="space-x-1">
-      {badgeGroup.map(badge => (
-        <ShieldsBadge format={badge}/>
-      ))}
-    </div>
-  ))}
+  {
+    FOOTER.badgeGroups.map((badgeGroup) => (
+      <div class="space-x-1">
+        {badgeGroup.map((badge) => (
+          <ShieldsBadge format={badge} />
+        ))}
+      </div>
+    ))
+  }
 </div>

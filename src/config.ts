@@ -1,18 +1,18 @@
 const FAVICON = '/favicon.svg'
 const BASE_URL = 'https://zhangchuachua.github.io'
 const SITE_INFO = {
-  title: 'Antares',
-  author: '张欻欻',
+  title: 'ZCC',
+  author: 'ZCC',
   language: 'zh-CN',
   description: '我的个人博客',
-  startYear: 2025,
+  startYear: new Date().getFullYear(),
   endYear: new Date().getFullYear(),
   email: 'zchuachuax@gmail.com',
   baseUrl: BASE_URL + '/',
   avatarUrl: BASE_URL + '/favicon.svg',
   siteshotUrl: BASE_URL + '/siteshot.png',
 }
-const POST_PGAE_SIZE = 5
+const POST_PGAE_SIZE = 9
 const DEFAULT_FRONTMATTER = {
   titleIcon: 'asset:feather,#4c4948|asset:feather,#c9c9d7',
   titleColor: '#4c4948|#c9c9d7',
@@ -29,13 +29,9 @@ const SIDEBAR_SETTINGS = {
 }
 const ASIDE_CARDS = {
   info: {
-    name: "Antares",
+    name: "ZCC",
     link: '/',
     avatar: '/favicon.svg',
-    descriptionLines: [
-      "This is the Antares theme",
-      "A blog template based on Astro",
-    ]
   }
 }
 const NAV_ITEMS = [
@@ -62,11 +58,6 @@ const NAV_ITEMS = [
     ]
   },
   {
-    icon: "mdi:account-multiple",
-    text: "友链",
-    href: "/links"
-  },
-  {
     icon: "mdi:account-box",
     text: "我的",
     href: "/about",
@@ -85,7 +76,7 @@ const FOOTER = {
     [
       {
         label: '框架',
-        message: `Astro ${packageJson.dependencies.astro.slice(1)}`,
+        message: `Astro ${packageJson.dependencies.astro}`,
         labelColor: '#555',
         color: '#E374B9',
         logoBase64: `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' color='white' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.358 20.162c-1.186-1.07-1.532-3.316-1.038-4.944c.856 1.026 2.043 1.352 3.272 1.535c1.897.283 3.76.177 5.522-.678c.202-.098.388-.229.608-.36c.166.473.209.95.151 1.437c-.14 1.185-.738 2.1-1.688 2.794c-.38.277-.782.525-1.175.787c-1.205.804-1.531 1.747-1.078 3.119l.044.148a3.16 3.16 0 0 1-1.407-1.188a3.3 3.3 0 0 1-.544-1.815c-.004-.32-.004-.642-.048-.958c-.106-.769-.472-1.113-1.161-1.133c-.707-.02-1.267.411-1.415 1.09c-.012.053-.028.104-.045.165zm-5.961-4.445s3.24-1.575 6.49-1.575l2.451-7.565c.092-.366.36-.614.662-.614s.57.248.662.614l2.45 7.565c3.85 0 6.491 1.575 6.491 1.575L16.088.727C15.93.285 15.663 0 15.303 0H8.697c-.36 0-.615.285-.784.727z'/%3E%3C/svg%3E`,
@@ -95,7 +86,7 @@ const FOOTER = {
       },
       {
         label: '主题',
-        message: `Antares ${packageJson.version}`,
+        message: `Antares 1.0.3`,
         labelColor: '#555',
         color: '#1E8CD9',
         logoBase64: `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' color='white' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.358 20.162c-1.186-1.07-1.532-3.316-1.038-4.944c.856 1.026 2.043 1.352 3.272 1.535c1.897.283 3.76.177 5.522-.678c.202-.098.388-.229.608-.36c.166.473.209.95.151 1.437c-.14 1.185-.738 2.1-1.688 2.794c-.38.277-.782.525-1.175.787c-1.205.804-1.531 1.747-1.078 3.119l.044.148a3.16 3.16 0 0 1-1.407-1.188a3.3 3.3 0 0 1-.544-1.815c-.004-.32-.004-.642-.048-.958c-.106-.769-.472-1.113-1.161-1.133c-.707-.02-1.267.411-1.415 1.09c-.012.053-.028.104-.045.165zm-5.961-4.445s3.24-1.575 6.49-1.575l2.451-7.565c.092-.366.36-.614.662-.614s.57.248.662.614l2.45 7.565c3.85 0 6.491 1.575 6.491 1.575L16.088.727C15.93.285 15.663 0 15.303 0H8.697c-.36 0-.615.285-.784.727z'/%3E%3C/svg%3E`,
@@ -135,8 +126,7 @@ export const FRIEND_LINK = {
   siteshotPrefix: 'https://image.thum.io/get/width/400/crop/800/'
 }
 
-  //======================================
-  ;
+//======================================
 import packageJson from '../package.json'
 import type { Format } from 'badge-maker'
 import friend_link_groups from './config.links'

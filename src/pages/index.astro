@@ -1,25 +1,25 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'
-import PostCard from '@/components/PostCard.astro'
-import PageNav from '@/components/widget/PageNav.astro'
-import { POST_PGAE_SIZE as pageSize } from '@/config'
-import posts_all from '@/content/posts'
-const posts = posts_all.slice(0, pageSize)
-const pnCurr = 1, pnLast = Math.ceil(posts_all.length * 1.0 / pageSize)
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PostCard from "@/components/PostCard.astro";
+import PageNav from "@/components/widget/PageNav.astro";
+import { POST_PGAE_SIZE as pageSize } from "@/config";
+import posts_all from "@/content/posts";
+const posts = posts_all.slice(0, pageSize);
+const pnCurr = 1,
+  pnLast = Math.ceil((posts_all.length * 1.0) / pageSize);
 ---
 
-<BaseLayout asideCards={[
-  'CardInfo',
-  ['CardMarkdown', { title: 'Hi there! 👋', content:'- This is the Antares theme  \nA blog template based on Astro  \n- [**GitHub Repository**](https://github.com/coderxi1/astro-antares)  \n- [**Author\'s Blog**](https://coderxi.com)'}],
-  'CardCategroies',
-  'CardTagCloud',
-  'CardSiteInfo',
-  'CardToolbar',
-]}>
-  <div class="space-y-5">
-    {posts.map((post) => (
-      <PostCard {post}/>
-    ))}
+<BaseLayout
+  asideCards={["CardToolbar", "CardTagCloud", "CardCategroies", "CardSiteInfo"]}
+>
+  <div class="flex flex-col gap-4">
+    {posts.map((post) => <PostCard {post} />)}
   </div>
-  <PageNav {pnCurr} {pnLast} urlPrefix="/page/" urlFirst="/"/>
+  <PageNav
+    class:list={["mt-4"]}
+    {pnCurr}
+    {pnLast}
+    urlPrefix="/page/"
+    urlFirst="/"
+  />
 </BaseLayout>

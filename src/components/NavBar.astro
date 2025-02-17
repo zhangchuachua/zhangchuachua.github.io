@@ -6,7 +6,7 @@ import ThemeIcon from './widget/ThemeIcon.astro'
 ---
 
 <nav id="nav" class="w-screen h15 fixed top-0 bg-normal shadow-md flex opacity-90 z-10 transition-transform duration-500">
-  <div class="wfull max-w-screen-2xl m-auto flex px3 items-center">
+  <div class="w-full max-w-screen-2xl m-auto flex px3 items-center">
     <div class="flex flex-1">
       <h1 class="text-xl font-bold">
         <a class="gc-text" style={titleColor2gcTextstyleVars('var(--colors-gradientBlue-left),var(--colors-gradientBlue-right)|var(--colors-gradientBlue-right),var(--colors-gradientBlue-left)')} href="/">{SITE_INFO.title}</a>
@@ -23,7 +23,7 @@ import ThemeIcon from './widget/ThemeIcon.astro'
             <span>{navItem.text}</span>
           </a>
           {!navItem.children?'':
-          <div class="hidden group-hover:block pos-absolute h3 wfull"></div>
+          <div class="hidden group-hover:block pos-absolute h3 w-full"></div>
           <div class="nav-item-children hidden group-hover:block pos-absolute mt3 -mr2 pos-right-0 rounded-sm w-[max-content] shadow-[0_5px_15px_-4px_#00000080] animate-move-up-sm">
             {navItem.children.map(navItemChild=>(
               <a class="flex py3 px4 items-center bg-normal hover:bg-global" href={navItemChild.href} class:list={navItemChild.href===Astro.originPathname?'active':''}>
