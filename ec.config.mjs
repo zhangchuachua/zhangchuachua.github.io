@@ -12,7 +12,7 @@ pluginFramesTexts.addLocale('zh-CN', {
 export default defineEcConfig({
   defaultLocale: 'zh-CN',
   plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
-  themes: ['light-plus', 'dark-plus'],
+  themes: ['github-light', 'github-dark'],
   themeCssSelector: () => `.dark`,
   useDarkModeMediaQuery: false,
   defaultProps: {

@@ -18,7 +18,7 @@ const html = render ? await markdown2html(content) : content;
 ---
 
 <If condition={style === "standard"}>
-  <div class="markdown-standard remark-directive-widgets">
+  <div class="prose prose-truegray dark:prose-invert remark-directive-widgets">
     <Fragment set:html={html} />
   </div>
 </If>

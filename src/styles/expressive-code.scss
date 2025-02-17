@@ -5,6 +5,8 @@
 .expressive-code {
   --ec-uiFontFml: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --ec-codeFontFml: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --ec-uiFontSize: 1em;
+  --ec-codeFontSize: 0.875em;
 }
 
 .dark .expressive-code {
