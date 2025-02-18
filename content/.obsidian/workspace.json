@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "ffd87cc956fd01d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "43fbba900848ed83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "426ffcf8c9da72cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "778ade287c2ff6cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e47451c266951f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "207f97b4990b8ce2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f359a2093fb3ba1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "199a915a94227472",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6ab5186685ab4d4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa97f0e475a6cb9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d2c48dd0f1ba37e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "index 的反向链接列表"
+            }
+          },
+          {
+            "id": "0591f8a0cd203893",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Astro 加载器 API.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Astro 加载器 API 的出链列表"
+            }
+          },
+          {
+            "id": "29f8392a7438b62c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "628062593dd6ba56",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Astro 加载器 API.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Astro 加载器 API 的大纲"
+            }
+          },
+          {
+            "id": "40cb93316e87af48",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "110da585f72182c8",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:创建新看板": false,
+      "templater-obsidian:Templater": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
+    }
+  },
+  "active": "426ffcf8c9da72cc",
+  "lastOpenFiles": [
+    "Astro-remote 源码阅读.md",
+    "imgsfuck.png",
+    "index.md",
+    "710a7426655cb39146939623106c2641_MD5.jpeg",
+    "Pasted image 20250218232413.png",
+    "Pasted image 20250218232006.png",
+    "Pasted image 20250218231942.png",
+    "imgs/image 1.png",
+    "博客搭建.md",
+    "Pasted image 20250218231558.png",
+    "Astro 加载器 API.md",
+    "@astro mdx 源码阅读.md"
+  ]
+}

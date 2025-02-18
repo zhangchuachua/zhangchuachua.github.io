@@ -15,9 +15,9 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    locale: "zh-CN",
+    baseUrl: "https://zhangchuachua.github.io",
+    ignorePatterns: ["private", "Templates", ".obsidian"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
@@ -25,8 +25,8 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        body: "Inter",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
