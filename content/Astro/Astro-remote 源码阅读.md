@@ -16,7 +16,6 @@ author: zhangchuachua
 created_at: 2025-02-07 02:08
 share: false
 ---
-
 项目中需要将来自于 CMS 的 markdown 渲染为 html；通过阅读 astro-remote 的源码解决以下问题：
 1. astro-remote 可以接收 astro 组件也可以接收 react 组件，怎么做到的？
 2. 接收 react 组件时默认是 server component 如何注册为 client component ？项目中需要用到

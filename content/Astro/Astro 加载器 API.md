@@ -6,7 +6,7 @@ tags:
 - 前端
 - astro
 create_date: 2025-02-18 11:30
-filename: astro-content-loader-api
+slug: astro-content-loader-api
 share: true
 ---
 

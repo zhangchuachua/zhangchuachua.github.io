@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Vim 奇技淫巧.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Vim 奇技淫巧"
             }
           }
         ]
@@ -186,7 +186,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,11 +203,24 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "426ffcf8c9da72cc",
+  "active": "207f97b4990b8ce2",
   "lastOpenFiles": [
+    "未命名",
+    "Performance API 的主要应用场景.md",
+    "index.md",
+    "网页性能指标.md",
+    "公司相关.md",
+    "前端笔记/前端笔记.md",
+    "网站性能",
+    "网络",
+    "React",
+    "Astro/Astro-remote 源码阅读.md",
+    "Astro/Astro 加载器 API.md",
+    "Astro/博客搭建.md",
+    "Astro/@astro mdx 源码阅读.md",
+    "Astro",
     "Astro-remote 源码阅读.md",
     "imgsfuck.png",
-    "index.md",
     "710a7426655cb39146939623106c2641_MD5.jpeg",
     "Pasted image 20250218232413.png",
     "Pasted image 20250218232006.png",
