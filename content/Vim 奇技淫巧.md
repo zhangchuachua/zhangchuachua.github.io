@@ -5,7 +5,7 @@ tags:
 - vim
 - code-fragment
 create_date: 2025-01-23 10:09
-filename: vim-skill.mdx
+slug: vim-skill
 share: true
 ---
 

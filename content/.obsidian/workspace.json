@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "43fbba900848ed83",
+        "id": "4e668530e3472332",
         "type": "tabs",
         "children": [
           {
-            "id": "426ffcf8c9da72cc",
+            "id": "1d9fff19c1efb0a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vim 奇技淫巧.md",
+                "file": "React/React 中 useState 原理.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vim 奇技淫巧"
+              "title": "React 中 useState 原理"
             }
           }
         ]
@@ -82,6 +82,16 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          },
+          {
+            "id": "3625b0f8144305e3",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -167,8 +177,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
@@ -177,8 +187,8 @@
             "state": {
               "type": "mermaid-toolbar-view",
               "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -203,14 +213,34 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "207f97b4990b8ce2",
+  "active": "1d9fff19c1efb0a7",
   "lastOpenFiles": [
-    "未命名",
+    "React/renderWithHooks 解析.md",
+    "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
+    "第一张图可以看到^ce3300.md",
+    "imgs/render-complete.png",
+    "imgs/beginWork-button.png",
+    "imgs/beginWork-button.png.png",
+    "imgs/beginwork-text-fiber.png",
+    "imgs/completeWork-Count-beginWork-Static.png",
+    "imgs/beginWork-App.png",
+    "imgs/beginWork-App.png",
+    "React/Fiber 如何构建 Hook 链表？.md",
+    "imgs/beginWork-Count.png",
+    "imgs/beginWork-button-child.png",
+    "imgs/beginWork-Count.png",
+    "React/为什么 useCallback 不能获取到最新的状态.md",
+    "React/发生更新时如何构建 fiber 树.md",
+    "Vim 奇技淫巧.md",
     "Performance API 的主要应用场景.md",
     "index.md",
+    "前端笔记/前端笔记.md",
+    "网络/CDN 如何决策资源请求？.md",
+    "React/Scheduler 原理.md",
+    "疑难杂症.md",
+    "未命名",
     "网页性能指标.md",
     "公司相关.md",
-    "前端笔记/前端笔记.md",
     "网站性能",
     "网络",
     "React",
@@ -220,14 +250,7 @@
     "Astro/@astro mdx 源码阅读.md",
     "Astro",
     "Astro-remote 源码阅读.md",
-    "imgsfuck.png",
-    "710a7426655cb39146939623106c2641_MD5.jpeg",
-    "Pasted image 20250218232413.png",
-    "Pasted image 20250218232006.png",
-    "Pasted image 20250218231942.png",
-    "imgs/image 1.png",
     "博客搭建.md",
-    "Pasted image 20250218231558.png",
     "Astro 加载器 API.md",
     "@astro mdx 源码阅读.md"
   ]

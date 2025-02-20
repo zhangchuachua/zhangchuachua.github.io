@@ -1,0 +1,36 @@
+{
+  "recentFiles": [
+    {
+      "basename": "React 中 useState 原理",
+      "path": "React/React 中 useState 原理.md"
+    },
+    {
+      "basename": "renderWithHooks 解析",
+      "path": "React/renderWithHooks 解析.md"
+    },
+    {
+      "basename": "React 如何构建 Fiber 树？(React Render 阶段解析)",
+      "path": "React/React 如何构建 Fiber 树？(React Render 阶段解析).md"
+    },
+    {
+      "basename": "beginWork-button",
+      "path": "imgs/beginWork-button.png"
+    },
+    {
+      "basename": "beginWork-App",
+      "path": "imgs/beginWork-App.png"
+    },
+    {
+      "basename": "Fiber 如何构建 Hook 链表？",
+      "path": "React/Fiber 如何构建 Hook 链表？.md"
+    },
+    {
+      "basename": "create-wip-and-wipRoot",
+      "path": "imgs/create-wip-and-wipRoot.png"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

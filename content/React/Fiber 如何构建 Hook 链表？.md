@@ -2,12 +2,10 @@
 title: Fiber 如何构建 Hook 链表？
 description: Fiber 如何构建 Hook 链表？
 tags:
-- 开发
-- 前端
 - react
 - 源码
 create_date: 2025-02-09 01:48
-filename: react-fiber-how-to-build-hooks-linklist.mdx
+slug: react-fiber-how-to-build-hooks-linklist
 share: true
 ---
 
@@ -232,8 +230,22 @@ wipHook[wipHook 与
 wipFiber.memoizedState] --> if2{nextWipHook is null?} --is null 走这里--> newHook["newHook 基于 
 currentHook(stateHook)"]
 if2 --is not null--> nextWipHook
+```
 
-	
+第二次执行：
+
+```mermaid
+flowchart TB
+cntHook[currentHook] --> if{nextCurrentHook is null?} --is null--> n1[null]
+if --is not null 一般进入这里--> shook[callbackHook]
+nextCntHook[nextCurrentHook] --> if
+
+subgraph 正常情况
+if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
+currentHook(callbackHook)"]
+wipFiber.memoizedState --> stateHook --next--> newHook
+end
+
 ```
 
 第三次执行：
@@ -263,24 +275,6 @@ subgraph 正常情况
 if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
 currentHook(effectHook)"]
 wipFiber.memoizedState --> stateHook  --next--> callbackHook --next--> memoHook --next--> newHook
-end
-
-```
-
-  
-
-第二次执行：
-
-```mermaid
-flowchart TB
-cntHook[currentHook] --> if{nextCurrentHook is null?} --is null--> n1[null]
-if --is not null 一般进入这里--> shook[callbackHook]
-nextCntHook[nextCurrentHook] --> if
-
-subgraph 正常情况
-if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
-currentHook(callbackHook)"]
-wipFiber.memoizedState --> stateHook --next--> newHook
 end
 
 ```
