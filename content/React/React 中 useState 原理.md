@@ -5,7 +5,7 @@ tags:
 - react
 - sourcecode
 create_date: 2025-02-20 14:17
-slug: render-with-hooks
+slug: parse-use-state
 ---
 
 首先要知道一点： Hooks 在挂载时和更新时执行的函数是不一样的
