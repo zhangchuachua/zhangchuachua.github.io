@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "如何将 Rust 编译为 wasm？",
+      "path": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md"
+    },
+    {
+      "basename": "Rust 查漏补缺",
+      "path": "Rust 学习笔记/Rust 查漏补缺.md"
+    },
+    {
+      "basename": "rust 类型系统",
+      "path": "Rust 学习笔记/rust 类型系统.md"
+    },
+    {
+      "basename": "Rust lifetime 开飙",
+      "path": "Rust 学习笔记/Rust lifetime 开飙.md"
+    },
+    {
+      "basename": "Rust 学习笔记",
+      "path": "Rust 学习笔记/Rust 学习笔记.md"
+    },
+    {
+      "basename": "为什么 useCallback 不能获取到最新的状态",
+      "path": "React/为什么 useCallback 不能获取到最新的状态.md"
+    },
+    {
+      "basename": "Fiber 如何构建 Hook 链表？",
+      "path": "React/Fiber 如何构建 Hook 链表？.md"
+    },
+    {
+      "basename": "发生更新时如何构建 fiber 树",
+      "path": "React/发生更新时如何构建 fiber 树.md"
+    },
+    {
       "basename": "React 中 useState 原理",
       "path": "React/React 中 useState 原理.md"
     },
@@ -19,10 +51,6 @@
     {
       "basename": "beginWork-App",
       "path": "imgs/beginWork-App.png"
-    },
-    {
-      "basename": "Fiber 如何构建 Hook 链表？",
-      "path": "React/Fiber 如何构建 Hook 链表？.md"
     },
     {
       "basename": "create-wip-and-wipRoot",
