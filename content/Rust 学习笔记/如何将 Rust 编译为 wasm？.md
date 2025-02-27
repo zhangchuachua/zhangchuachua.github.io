@@ -1,9 +1,9 @@
 ---
 title: 如何将 Rust 编译为 wasm
-description:如何将 Rust 编译为 wasm? 本文将演示使用 wasm-pack 将 rust 编译为 wasm 的全过程。
+description: 如何将 Rust 编译为 wasm? 本文将演示使用 wasm-pack 将 rust 编译为 wasm 的全过程。
 tags:
-- rust
-- wasm
+  - rust
+  - wasm
 create_date: 2025-02-27 13:41
 slug: how-rust-comiles-to-wasm
 ---
