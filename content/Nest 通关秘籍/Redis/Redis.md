@@ -1,1 +1,9 @@
+---
+title: Redis
+description:
+tags:
+create_date: 2025-02-19 10:31
+draft: true
+---
+
 Redis 时内存数据库，数据将会存储在内存中，所以数据的访问非常快；而 MySQL 将数据存储在硬盘中，可以存储大量数据，但是性能肯定差的多

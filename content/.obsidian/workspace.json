@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "如何将 Rust 编译为 wasm？"
+              "title": "index"
             }
           }
         ]
@@ -215,8 +215,17 @@
   },
   "active": "1f6d0bfc24934a7d",
   "lastOpenFiles": [
-    "Rust 学习笔记/Rust 查漏补缺.md",
+    "疑难杂症.md",
+    "Buho Website note/next.js 14.md",
+    "Buho Website note/Buho Website note.md",
+    "Buho Website note/Astro 重构.md",
+    "index.md",
+    "Nest 通关秘籍/mysql/mysql.md",
+    "Nest 通关秘籍/Nginx/Nginx.md",
+    "Nest 通关秘籍/Redis/Redis.md",
+    "Nest 通关秘籍/Nest 通关秘籍.md",
     "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
+    "Rust 学习笔记/Rust 查漏补缺.md",
     "Rust 学习笔记/rust 类型系统.md",
     "Rust 学习笔记/Rust lifetime 开飙.md",
     "Rust 学习笔记/Rust 学习笔记.md",
@@ -239,22 +248,13 @@
     "imgs/beginWork-Count.png",
     "Vim 奇技淫巧.md",
     "Performance API 的主要应用场景.md",
-    "index.md",
     "前端笔记/前端笔记.md",
     "网络/CDN 如何决策资源请求？.md",
     "React/Scheduler 原理.md",
-    "疑难杂症.md",
     "未命名",
-    "网页性能指标.md",
-    "公司相关.md",
     "网站性能",
     "网络",
     "React",
-    "Astro/Astro-remote 源码阅读.md",
-    "Astro/Astro 加载器 API.md",
-    "Astro/博客搭建.md",
-    "Astro/@astro mdx 源码阅读.md",
-    "Astro",
-    "Astro-remote 源码阅读.md"
+    "Astro"
   ]
 }

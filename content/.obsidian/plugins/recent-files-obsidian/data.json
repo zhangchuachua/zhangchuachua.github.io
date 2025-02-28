@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "疑难杂症",
+      "path": "疑难杂症.md"
+    },
+    {
+      "basename": "next.js 14",
+      "path": "Buho Website note/next.js 14.md"
+    },
+    {
+      "basename": "Buho Website note",
+      "path": "Buho Website note/Buho Website note.md"
+    },
+    {
+      "basename": "Astro 重构",
+      "path": "Buho Website note/Astro 重构.md"
+    },
+    {
+      "basename": "mysql",
+      "path": "Nest 通关秘籍/mysql/mysql.md"
+    },
+    {
+      "basename": "Nginx",
+      "path": "Nest 通关秘籍/Nginx/Nginx.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "Nest 通关秘籍/Redis/Redis.md"
+    },
+    {
+      "basename": "Nest 通关秘籍",
+      "path": "Nest 通关秘籍/Nest 通关秘籍.md"
+    },
+    {
       "basename": "如何将 Rust 编译为 wasm？",
       "path": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md"
     },

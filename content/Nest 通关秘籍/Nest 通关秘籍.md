@@ -1,3 +1,11 @@
+---
+title: Nest 通关秘籍
+description:
+tags:
+create_date: 2025-02-19 10:31
+draft: true
+---
+
 源于[掘金小册](https://juejin.cn/book/7226988578700525605)
 
 > 国内从 Docker Hub 拉去镜像时可能会遇到困难(我是在执行 `docker compose up` 时遇到了报错；但是执行 `docker pull` 又没有问题)；这种情况可以通过镜像加速期解决；参考：[https://yeasy.gitbook.io/docker_practice/install/mirror](https://yeasy.gitbook.io/docker_practice/install/mirror)
