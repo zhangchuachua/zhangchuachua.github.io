@@ -6,7 +6,7 @@ tags:
 - code-fragment
 create_date: 2025-01-23 10:09
 slug: vim-skill
-share: true
+draft: true
 ---
 
 ### 大小写切换

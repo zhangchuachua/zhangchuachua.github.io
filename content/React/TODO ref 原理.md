@@ -5,7 +5,6 @@ tags:
   - react
   - sourcecode
 create_date: 2025-02-25 00:21
-filename: <% tp.file.cursor(2) %>
 draft: true
 ---
 

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "虚拟列表组件",
+      "path": "虚拟列表组件.md"
+    },
+    {
+      "basename": "Vim 奇技淫巧",
+      "path": "Vim 奇技淫巧.md"
+    },
+    {
+      "basename": "Performance API 的主要应用场景",
+      "path": "Performance API 的主要应用场景.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
@@ -9,8 +21,24 @@
       "path": "疑难杂症.md"
     },
     {
-      "basename": "next.js 14",
-      "path": "Buho Website note/next.js 14.md"
+      "basename": "网页性能指标",
+      "path": "网页性能指标.md"
+    },
+    {
+      "basename": "公司相关",
+      "path": "公司相关.md"
+    },
+    {
+      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
+      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
+    },
+    {
+      "basename": "CDN 如何决策资源请求？",
+      "path": "网络/CDN 如何决策资源请求？.md"
+    },
+    {
+      "basename": "HTTP 缓存",
+      "path": "网络/HTTP 缓存.md"
     },
     {
       "basename": "Buho Website note",
@@ -19,6 +47,14 @@
     {
       "basename": "Astro 重构",
       "path": "Buho Website note/Astro 重构.md"
+    },
+    {
+      "basename": "next.js 14",
+      "path": "Buho Website note/next.js 14.md"
+    },
+    {
+      "basename": "TODO ref 原理",
+      "path": "React/TODO ref 原理.md"
     },
     {
       "basename": "mysql",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/TODO ref 原理.md",
+                "file": "虚拟列表组件.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "TODO ref 原理"
+              "title": "虚拟列表组件"
             }
           }
         ]
@@ -203,12 +203,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "207f97b4990b8ce2",
+  "active": "426ffcf8c9da72cc",
   "lastOpenFiles": [
-    "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
     "Vim 奇技淫巧.md",
-    "React/TODO ref 原理.md",
+    "虚拟列表组件.md",
+    "Performance API 的主要应用场景.md",
+    "index.md",
+    "疑难杂症.md",
+    "网页性能指标.md",
+    "公司相关.md",
+    "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
+    "网络/CDN 如何决策资源请求？.md",
     "网络/HTTP 缓存.md",
+    "Buho Website note/Buho Website note.md",
+    "Buho Website note/Astro 重构.md",
+    "Buho Website note/next.js 14.md",
+    "React/TODO ref 原理.md",
+    "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
     "imgs/render-complete.png",
     "imgs/create-wip-and-wipRoot.png",
     "imgs/create-fiberRootNode-and-HostRoot.png",
@@ -221,10 +232,6 @@
     "React/renderWithHooks 解析.md",
     "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
     "未命名",
-    "Performance API 的主要应用场景.md",
-    "index.md",
-    "网页性能指标.md",
-    "公司相关.md",
     "前端笔记/前端笔记.md",
     "网站性能",
     "网络",
