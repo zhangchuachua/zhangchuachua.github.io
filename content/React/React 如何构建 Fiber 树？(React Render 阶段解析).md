@@ -77,6 +77,22 @@ beginwork 处理 button
 
 ![[beginWork-button.png]]
 
+> [!important]- completeWork 如何处理 未知组件、class 组件、函数组件、memo 组件、forwordRef、Fragment?
+>  主要将子节点的 lane 和 flag 同步到当前 fiber 上
+> 
+
+> [!tip]- completeWork 如何处理 HostComponent
+> HostComponent 也就是原生 html element
+> 
+> 挂载时：
+> 1. 使用 createElement 创建 instance，并且把 fiber 对象和 props 都放到 instance 对象中；
+> 2. 把 children 放到 instance 中，把 instance 放到 stateNode 中；并且遍历 props 将属性设置到 instance 中，也就是说此时的 instance 基本是个完全体了；
+> 3. 把 children 的 lane 和 flag 放到当前 fiber 中
+>
+>更新时重点操作见下：
+>1. 更新时会调用 updateHostComponent 函数，该函数内部首先会比较 props 是否发生了改变；没改变的话直接返回；
+>2. 
+
 completeWork 处理 Count 然后发现 sibling 不为 null 而是 Static Fiber，于是将 wip 指向 Static Fiber 并结束本次 completeUnitWork 开始 beginWork 处理 Static Fiber；
 
 ![[completeWork-Count-beginWork-Static.png]]

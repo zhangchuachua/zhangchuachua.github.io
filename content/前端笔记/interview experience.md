@@ -1,3 +1,15 @@
+---
+title: interview experience
+description:
+tags:
+- 开发
+- 前端
+- react
+- 源码
+create_date: 2025-02-19 10:31
+draft: true
+---
+
 - 源自[v2ex](https://v2ex.com/t/1041029)
     
       
