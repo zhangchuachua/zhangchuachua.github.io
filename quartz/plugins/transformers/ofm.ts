@@ -18,6 +18,8 @@ import { JSResource, CSSResource } from "../../util/resources"
 // @ts-ignore
 import calloutScript from "../../components/scripts/callout.inline.ts"
 // @ts-ignore
+import imageZoomScript from '../../components/scripts/img-zoom.inline'
+// @ts-ignore
 import checkboxScript from "../../components/scripts/checkbox.inline.ts"
 import { FilePath, pathToRoot, slugTag, slugifyFilePath } from "../../util/path"
 import { toHast } from "mdast-util-to-hast"
@@ -817,6 +819,12 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           contentType: "inline",
         })
       }
+
+      js.push({
+        script: imageZoomScript,
+        loadTime: 'afterDOMReady',
+        contentType: 'inline',
+      })
 
       return { js, css }
     },

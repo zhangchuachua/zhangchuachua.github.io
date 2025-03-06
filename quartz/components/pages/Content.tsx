@@ -1,6 +1,5 @@
 import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
-import script from '../scripts/img-zoom.inline'
 
 const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
   const content = htmlToJsx(fileData.filePath!, tree)
@@ -14,7 +13,5 @@ Content.css = `
     z-index: 999;
   }
 `
-
-Content.afterDOMLoaded = script;
 
 export default (() => Content) satisfies QuartzComponentConstructor

@@ -2,8 +2,6 @@ import mediumZoom from "medium-zoom";
 
 const article = document.querySelectorAll("[data-article]");
 
-console.log(article);
-
 article.forEach((el) => {
   const imgs = el.querySelectorAll("img");
 
