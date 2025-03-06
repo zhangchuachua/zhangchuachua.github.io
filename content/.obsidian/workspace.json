@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "96c2da4e91d0ff24",
+        "id": "89b9e67713f6f72e",
         "type": "tabs",
         "children": [
           {
-            "id": "2a83df00fbd6bb5d",
+            "id": "9aa7d22f710ce046",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
+                "file": "React/commit 阶段.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "React 如何构建 Fiber 树？(React Render 阶段解析)"
+              "title": "commit 阶段"
             }
           }
         ]
@@ -94,8 +94,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -214,13 +213,20 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2a83df00fbd6bb5d",
+  "active": "9aa7d22f710ce046",
   "lastOpenFiles": [
-    "虚拟列表组件.md",
-    "React/TODO ref 原理.md",
-    "张汉东的 Rust 实战课/第一节 - Rust 语言基础/06+07+08 - 面向表达式/06+07+08 - 面向表达式.md",
-    "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
+    "React/commit 阶段.md",
+    "React/为什么 useCallback 不能获取到最新的状态.md",
+    "React/发生更新时如何构建 fiber 树.md",
+    "React/renderWithHooks 解析.md",
     "React/Fiber 如何构建 Hook 链表？.md",
+    "React/React 合成事件.md",
+    "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
+    "React/TODO ref 原理.md",
+    "React/Hook 对象.md",
+    "React/React 中 useState 原理.md",
+    "虚拟列表组件.md",
+    "张汉东的 Rust 实战课/第一节 - Rust 语言基础/06+07+08 - 面向表达式/06+07+08 - 面向表达式.md",
     "Nest 通关秘籍/mysql/mysql.md",
     "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
     "网络/HTTP 协议基础.md",
@@ -235,13 +241,6 @@
     "Nest 通关秘籍/Redis/Redis.md",
     "Nest 通关秘籍/Nest 通关秘籍.md",
     "Rust 学习笔记/Rust 查漏补缺.md",
-    "Rust 学习笔记/rust 类型系统.md",
-    "Rust 学习笔记/Rust lifetime 开飙.md",
-    "Rust 学习笔记/Rust 学习笔记.md",
-    "React/为什么 useCallback 不能获取到最新的状态.md",
-    "React/发生更新时如何构建 fiber 树.md",
-    "React/React 中 useState 原理.md",
-    "React/renderWithHooks 解析.md",
     "imgs/render-complete.png",
     "imgs/beginWork-button.png",
     "imgs/beginWork-button.png.png",

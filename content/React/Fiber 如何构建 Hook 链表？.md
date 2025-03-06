@@ -214,69 +214,92 @@ function updateWorkInProgressHook(): Hook {
 }
 ```
 
-> [!important] 下面的流程图，只考虑正常情况，包括<br>1. 第一次执行时， wipFiber.memoizedState 为 null，因为在执行函数组件前就将其置为了 null<br>2. 第一次执行时，currentHook 与 wipHook 应该为 null，因为在每次函数执行完后 renderWithHook 都会吧这个全局变量置为 null<br>
+> [!important] 注意
+> 下面的流程图，只考虑大部分情况，包括
+> 1. 第一次执行时，wipFiber.memoizedState 为 null，因为在执行函数组件前就将其置为了 null
+> 2. 第一次执行时，currentHook 与 wipHook 应该为 null，因为在每次函数执行完后 renderWithHook 都会吧这个全局变量置为 null
 
 第一次执行：
 
 ```mermaid
 flowchart TB
-finalCntHook[currentHook] --> finalIf{current is null?} --is null--> finalNull[null]
-finalIf --is not null --> finalCntMemo[current.memoizedState 
-hook 链表头部是 stateHook
-所以 currentHook 指向 
-stateHook]
-nextCurrentHook --> finalIf
-wipHook[wipHook 与
-wipFiber.memoizedState] --> if2{nextWipHook is null?} --is null 走这里--> newHook["newHook 基于 
-currentHook(stateHook)"]
-if2 --is not null--> nextWipHook
+current.memoizedState --> useState --> useCallback --> useMemo --> useEffect --> null
+current --> useState
+wip.memoizedState --> newUseStateHook["newHook 复用\n useState 的值"] --> newNull[null]
 ```
 
 第二次执行：
 
 ```mermaid
 flowchart TB
-cntHook[currentHook] --> if{nextCurrentHook is null?} --is null--> n1[null]
-if --is not null 一般进入这里--> shook[callbackHook]
-nextCntHook[nextCurrentHook] --> if
-
-subgraph 正常情况
-if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
-currentHook(callbackHook)"]
-wipFiber.memoizedState --> stateHook --next--> newHook
-end
-
+current.memoizedState --> useState --> useCallback --> useMemo --> useEffect --> null
+current --> useCallback
+wip.memoizedState --> newUseStateHook --> newCallbackHook -->  newNull[null]
 ```
 
 第三次执行：
 
 ```mermaid
 flowchart TB
-cntHook[currentHook] --> if{nextCurrentHook is null?} --is null--> n1[null]
-if --is not null 一般进入这里--> shook[memoHook]
-nextCntHook[nextCurrentHook] --> if
-
-subgraph 正常情况
-if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
-currentHook(memoHook)"]
-wipFiber.memoizedState --> stateHook  --next--> callbackHook --next--> newHook
-end
+    current.memoizedState --> useState --> useCallback --> useMemo --> useEffect --> null
+    current --> useMemo
+    wip.memoizedState --> newUseStateHook --> newCallbackHook --> newMemoHook -->  newNull[null]
 ```
 
 第四次执行：
 
 ```mermaid
 flowchart TB
-cntHook[currentHook] --> if{nextCurrentHook is null?} --is null--> n1[null]
-if --is not null 一般进入这里--> shook[effectHook]
-nextCntHook[nextCurrentHook] --> if
-
-subgraph 正常情况
-if2{nextWipHook is null?} --is null --> wipHook[wipHook] --> newHook["newHook 基于
-currentHook(effectHook)"]
-wipFiber.memoizedState --> stateHook  --next--> callbackHook --next--> memoHook --next--> newHook
-end
-
+    current.memoizedState --> useState --> useCallback --> useMemo --> useEffect --> null
+    current --> useEffect
+    wip.memoizedState --> newUseStateHook --> newCallbackHook --> newMemoHook --> newEffectHook -->  newNull[null]
 ```
 
-可以发现 wipFiber.memoizedState 连接完成；
+可以发现 wipFiber.memoizedState 连接完成；updateWorkInProgressHook 可以理解为不断遍历 current.memoizedState 上的 Hook 链表； 
+currentHook 必须指向正在执行的 Hook 对象。
+
+## 如果 hooks 在 if 语句中会怎么样？
+
+假设是如下代码：是 hook 变多的情况
+
+```jsx
+let mounted = false;
+function App() {
+  let count, setCount;
+  if(mounted) {
+    [count, setCount] = useState(0);
+  } else {
+    mounted = true;
+  }
+  const handleClick = useCallback(() => {}, []);
+  
+  return <div onClick={handleClick}>{count}</div>;
+}
+```
+
+挂载时应该是一切正常的，在更新时, 进入 updateWorkInProgressHook：
+
+第一次执行
+
+```mermaid
+flowchart TB
+current.memoizedState --> useCallback --> null
+current --> useCallback
+wip.memoizedState --> useStateHook["useStateHook 注意这里复用的是 \n useCallback 的值"]
+```
+
+第二次执行
+
+```mermaid
+flowchart TB
+current.memoizedState --> useCallback --> null
+nextCurrent --> null
+desc["此时正在执行 useCallback \n可是 nextCurrent 为 null \n那么说明 Hook 变多了，\n所以直接抛出错误"]
+```
+
+如果是 hook 变少的情况呢？
+
+hook 变少，在 updateWorkInProgressHook 函数中是察觉不出来的，将会在 renderWithHook 中进行处理
+
+正常情况下， 函数组件执行完成后，currentHook 将会指向最后一个 Hook 所以 renderWithHook 将会判断：`currentHook !== null && currentHook.next !== null`
+如果 nextCurrent 还是不为 null 那么说明 hook 变少了；直接抛出错误；
