@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "虚拟列表组件"
             }
+          },
+          {
+            "id": "347b556378d6cbe4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文件上传.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "文件上传"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,8 +228,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "426ffcf8c9da72cc",
+  "active": "347b556378d6cbe4",
   "lastOpenFiles": [
+    "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
+    "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
+    "文件上传.md",
     "在 raycast-extension 中使用 rust.md",
     "React/commit 阶段.md",
     "Vim 奇技淫巧.md",
@@ -242,9 +270,6 @@
     "Astro/Astro 加载器 API.md",
     "Astro/博客搭建.md",
     "Astro/@astro mdx 源码阅读.md",
-    "Astro",
-    "Astro-remote 源码阅读.md",
-    "imgsfuck.png",
-    "博客搭建.md"
+    "Astro"
   ]
 }
