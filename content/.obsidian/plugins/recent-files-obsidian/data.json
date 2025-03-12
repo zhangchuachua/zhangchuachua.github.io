@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "rust 类型系统",
+      "path": "Rust 学习笔记/rust 类型系统.md"
+    },
+    {
+      "basename": "Rust lifetime 开飙",
+      "path": "Rust 学习笔记/Rust lifetime 开飙.md"
+    },
+    {
+      "basename": "Rust 学习笔记",
+      "path": "Rust 学习笔记/Rust 学习笔记.md"
+    },
+    {
+      "basename": "Rust 查漏补缺",
+      "path": "Rust 学习笔记/Rust 查漏补缺.md"
+    },
+    {
+      "basename": "如何将 Rust 编译为 wasm？",
+      "path": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md"
+    },
+    {
       "basename": "astro 集成 i18next",
       "path": "Astro/astro 集成 i18next.md"
     },
@@ -65,10 +85,6 @@
       "path": "Nest 通关秘籍/mysql/mysql.md"
     },
     {
-      "basename": "如何将 Rust 编译为 wasm？",
-      "path": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md"
-    },
-    {
       "basename": "HTTP 协议基础",
       "path": "网络/HTTP 协议基础.md"
     },
@@ -111,22 +127,6 @@
     {
       "basename": "Nest 通关秘籍",
       "path": "Nest 通关秘籍/Nest 通关秘籍.md"
-    },
-    {
-      "basename": "Rust 查漏补缺",
-      "path": "Rust 学习笔记/Rust 查漏补缺.md"
-    },
-    {
-      "basename": "rust 类型系统",
-      "path": "Rust 学习笔记/rust 类型系统.md"
-    },
-    {
-      "basename": "Rust lifetime 开飙",
-      "path": "Rust 学习笔记/Rust lifetime 开飙.md"
-    },
-    {
-      "basename": "Rust 学习笔记",
-      "path": "Rust 学习笔记/Rust 学习笔记.md"
     },
     {
       "basename": "beginWork-button",
