@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "89b9e67713f6f72e",
+        "id": "428271d89c3b84cd",
         "type": "tabs",
         "children": [
           {
-            "id": "2127b5b9d7fc5676",
+            "id": "a022597b5b773932",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -201,8 +199,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2127b5b9d7fc5676",
+  "active": "a022597b5b773932",
   "lastOpenFiles": [
+    "Astro/astro 集成 i18next.md",
+    "Astro/astro 国际化路由.md",
+    "Astro/博客搭建.md",
     "turbomono 管理多包项目.md",
     "文件上传.md",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
@@ -228,9 +229,6 @@
     "疑难杂症.md",
     "Buho Website note/next.js 14.md",
     "Buho Website note/Buho Website note.md",
-    "Buho Website note/Astro 重构.md",
-    "Nest 通关秘籍/Nginx/Nginx.md",
-    "Nest 通关秘籍/Redis/Redis.md",
     "imgs/render-complete.png",
     "imgs/beginWork-button.png",
     "imgs/beginWork-button.png.png",
