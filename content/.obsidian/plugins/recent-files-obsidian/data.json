@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "rust 类型系统",
-      "path": "Rust 学习笔记/rust 类型系统.md"
+      "basename": "如何实现 React KeepAlive 组件",
+      "path": "React/如何实现 React KeepAlive 组件.md"
     },
     {
       "basename": "Rust lifetime 开飙",
@@ -15,6 +15,10 @@
     {
       "basename": "Rust 查漏补缺",
       "path": "Rust 学习笔记/Rust 查漏补缺.md"
+    },
+    {
+      "basename": "rust 类型系统",
+      "path": "Rust 学习笔记/rust 类型系统.md"
     },
     {
       "basename": "如何将 Rust 编译为 wasm？",

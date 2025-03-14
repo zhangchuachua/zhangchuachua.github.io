@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust 学习笔记/rust 类型系统.md",
+                "file": "React/如何实现 React KeepAlive 组件.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "rust 类型系统"
+              "title": "如何实现 React KeepAlive 组件"
             }
           }
         ]
@@ -215,10 +215,11 @@
   },
   "active": "a022597b5b773932",
   "lastOpenFiles": [
+    "React/如何实现 React KeepAlive 组件.md",
     "Rust 学习笔记/Rust lifetime 开飙.md",
     "Rust 学习笔记/Rust 学习笔记.md",
-    "Rust 学习笔记/rust 类型系统.md",
     "Rust 学习笔记/Rust 查漏补缺.md",
+    "Rust 学习笔记/rust 类型系统.md",
     "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
     "Astro/astro 集成 i18next.md",
     "Astro/astro 国际化路由.md",
@@ -242,7 +243,6 @@
     "Nest 通关秘籍/mysql/mysql.md",
     "网络/HTTP 协议基础.md",
     "前端笔记/interview experience.md",
-    "在 raycast-extension 中使用 rust.md",
     "imgs/render-complete.png",
     "imgs/beginWork-button.png",
     "imgs/beginWork-button.png.png",
