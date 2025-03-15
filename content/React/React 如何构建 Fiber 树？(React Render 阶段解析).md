@@ -91,7 +91,7 @@ beginwork 处理 button
 >
 >更新时重点操作见下：
 >1. 更新时会调用 updateHostComponent 函数，该函数内部首先会比较 props 是否发生了改变；没改变的话直接返回；
->2. props 发生了改变，把改变的属性拿出来，放到 wip.updateQueue 中，比如 `oldProps = { children: 0, style: {color: 'red'} }; newProps = {children: 2, style: {color: 'red'}}` 那么 `wip.updateQueue = {children: 2}`
+>2. props 发生了改变，把改变的属性拿出来，放到 wip.updateQueue 中，比如 `oldProps = { children: 0, style: {color: 'red'} }; newProps = {children: 2, style: {color: 'red'}}` 那么 `wip.updateQueue = ['children', 2]` 注意是一个数组
 >3. 把 children 的 lane 和 flag 放到当前 fiber 中
 
 > [!tip]- completeWork 如何处理 HostText

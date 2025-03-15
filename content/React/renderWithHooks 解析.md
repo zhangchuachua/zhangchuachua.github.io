@@ -93,7 +93,7 @@ export function renderWithHooks<Props, SecondArg>(
 首先需要知道 Fiber 中的 `memoizedState, updateQueue` 属性是什么，首先不同的类型 fiber 的这三个属性存储的内容是不一样的；这里解释的是函数组件的这三个属性
 
 - memoizedState 用于存储 Hook 对象链表
-- updateQueue 用于存放副作用链表，比如 setState 创建的 Update 对象，比如 effect 创建的 Effect 对象；
+- updateQueue 用于存放副作用链表，只能是 effect 创建的 Effect 对象；
 
 不管是挂载还是更新，在每个函数组件执行之前，都会重置 `memoizedState, updateQueue, lanes` 
 

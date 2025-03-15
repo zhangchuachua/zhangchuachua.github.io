@@ -58,7 +58,7 @@ function mountState<S>(
 
 从上面的部分知道了 setXXX 这个函数其实就是 dispatch; 所以下面是 dispatch 的部分代码:
 
-```flow js title="react-reconciler/src/ReactFiberHooks.js"
+```js title="react-reconciler/src/ReactFiberHooks.js"
 function dispatchSetState<S, A>(
     fiber: Fiber,
     queue: UpdateQueue<S, A>,
@@ -123,7 +123,7 @@ function dispatchSetState<S, A>(
 
 更新时执行的是 updateReducer (useState 就是 useReducer 的变体)
 
-```flow js title="react-reconciler/src/ReactFiberHooks.js"
+```js title="react-reconciler/src/ReactFiberHooks.js"
 function updateReducer<S, I, A>(
     reducer: (S, A) => S,
     initialArg: I,
