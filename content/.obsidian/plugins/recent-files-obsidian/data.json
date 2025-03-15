@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
+      "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
+    },
+    {
       "basename": "commit 阶段",
       "path": "React/commit 阶段.md"
     },
@@ -9,166 +13,16 @@
       "path": "React/Fiber 对象.md"
     },
     {
-      "basename": "TODO ref 原理",
-      "path": "React/TODO ref 原理.md"
-    },
-    {
-      "basename": "虚拟列表组件",
-      "path": "虚拟列表组件.md"
-    },
-    {
-      "basename": "flags",
-      "path": "React/flags.md"
-    },
-    {
       "basename": "为什么 useCallback 不能获取到最新的状态",
       "path": "React/为什么 useCallback 不能获取到最新的状态.md"
-    },
-    {
-      "basename": "useEffect useInsertionEffect useLayoutEffect 原理",
-      "path": "React/useEffect useInsertionEffect useLayoutEffect 原理.md"
-    },
-    {
-      "basename": "React 如何构建 Fiber 树？(React Render 阶段解析)",
-      "path": "React/React 如何构建 Fiber 树？(React Render 阶段解析).md"
-    },
-    {
-      "basename": "Scheduler 原理",
-      "path": "React/Scheduler 原理.md"
-    },
-    {
-      "basename": "rust 类型系统",
-      "path": "Rust 学习笔记/rust 类型系统.md"
-      "basename": "如何实现 React KeepAlive 组件",
-      "path": "React/如何实现 React KeepAlive 组件.md"
-    },
-    {
-      "basename": "Rust lifetime 开飙",
-      "path": "Rust 学习笔记/Rust lifetime 开飙.md"
-    },
-    {
-      "basename": "Rust 学习笔记",
-      "path": "Rust 学习笔记/Rust 学习笔记.md"
-    },
-    {
-      "basename": "Rust 查漏补缺",
-      "path": "Rust 学习笔记/Rust 查漏补缺.md"
-    },
-    {
-      "basename": "rust 类型系统",
-      "path": "Rust 学习笔记/rust 类型系统.md"
-    },
-    {
-      "basename": "如何将 Rust 编译为 wasm？",
-      "path": "Rust 学习笔记/如何将 Rust 编译为 wasm？.md"
-    },
-    {
-      "basename": "astro 集成 i18next",
-      "path": "Astro/astro 集成 i18next.md"
-    },
-    {
-      "basename": "astro 国际化路由",
-      "path": "Astro/astro 国际化路由.md"
-    },
-    {
-      "basename": "博客搭建",
-      "path": "Astro/博客搭建.md"
-    },
-    {
-      "basename": "文件上传",
-      "path": "文件上传.md"
-    },
-    {
-      "basename": "Vim 奇技淫巧",
-      "path": "Vim 奇技淫巧.md"
-    },
-    {
-      "basename": "React 中 useState 原理",
-      "path": "React/React 中 useState 原理.md"
-    },
-    {
-      "basename": "renderWithHooks 解析",
-      "path": "React/renderWithHooks 解析.md"
-    },
-    {
-      "basename": "Hook 对象",
-      "path": "React/Hook 对象.md"
     },
     {
       "basename": "Fiber 如何构建 Hook 链表？",
       "path": "React/Fiber 如何构建 Hook 链表？.md"
     },
     {
-      "basename": "文件上传",
-      "path": "文件上传.md"
-    },
-    {
-      "basename": "React 合成事件",
-      "path": "React/React 合成事件.md"
-    },
-    {
-      "basename": "06+07+08 - 面向表达式",
-      "path": "张汉东的 Rust 实战课/第一节 - Rust 语言基础/06+07+08 - 面向表达式/06+07+08 - 面向表达式.md"
-    },
-    {
-      "basename": "mysql",
-      "path": "Nest 通关秘籍/mysql/mysql.md"
-    },
-    {
-      "basename": "HTTP 协议基础",
-      "path": "网络/HTTP 协议基础.md"
-    },
-    {
-      "basename": "interview experience",
-      "path": "前端笔记/interview experience.md"
-    },
-    {
-      "basename": "在 raycast-extension 中使用 rust",
-      "path": "在 raycast-extension 中使用 rust.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
-    },
-    {
-      "basename": "疑难杂症",
-      "path": "疑难杂症.md"
-    },
-    {
-      "basename": "next.js 14",
-      "path": "Buho Website note/next.js 14.md"
-    },
-    {
-      "basename": "Buho Website note",
-      "path": "Buho Website note/Buho Website note.md"
-    },
-    {
-      "basename": "Astro 重构",
-      "path": "Buho Website note/Astro 重构.md"
-    },
-    {
-      "basename": "Nginx",
-      "path": "Nest 通关秘籍/Nginx/Nginx.md"
-    },
-    {
-      "basename": "Redis",
-      "path": "Nest 通关秘籍/Redis/Redis.md"
-    },
-    {
-      "basename": "Nest 通关秘籍",
-      "path": "Nest 通关秘籍/Nest 通关秘籍.md"
-    },
-    {
-      "basename": "beginWork-button",
-      "path": "imgs/beginWork-button.png"
-    },
-    {
-      "basename": "beginWork-App",
-      "path": "imgs/beginWork-App.png"
-    },
-    {
-      "basename": "create-wip-and-wipRoot",
-      "path": "imgs/create-wip-and-wipRoot.png"
+      "basename": "如何实现 React KeepAlive 组件",
+      "path": "React/如何实现 React KeepAlive 组件.md"
     }
   ],
   "omittedPaths": [],
