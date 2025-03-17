@@ -17,7 +17,7 @@ function debounce(fn, delay, options = {}) {
   let timer = null;  
   let ret = undefined;  
   const { leading = true, trailing = true } = options;  
-  return function (...args) {  
+  function run(...args) {  
     if (!leading && !trailing) return;  
     if (timer === null) {  
       if (leading) {  
@@ -28,7 +28,8 @@ function debounce(fn, delay, options = {}) {
         return ret;  
       }  
     }  
-    clearTimeout(timer);  
+    clearTimeout(timer);
+    // 只能传入箭头函数，因为箭头函数没有 this
     timer = setTimeout(() => {  
       timer = null;  
       if (trailing) {  
@@ -37,7 +38,32 @@ function debounce(fn, delay, options = {}) {
     }, delay);  
     return ret;  
   }  
+  run.cancel = () => {
+	  clearTimeout(timer);
+	  timer = null;
+  }
 }  
   
 export default debounce;
+```
+
+```js
+ function useDebounceEffect(create, deps = [], options = {}) {  
+  const fnRef = useRef(create);  
+  
+  const fn = useMemo(() => {  
+    const { leading, trailing, delay = 0 } = options;  
+    return debounce(fnRef.current, delay, { leading, trailing });  
+  }, [options?.leading, options?.trailing, options?.delay]);  
+  
+  useEffect(() => {  
+    fn();  
+  }, [...deps, fn])  
+  
+  useEffect(() => {  
+    return () => {  
+      fn.cancel();  
+    }  
+  }, [fn]);  
+}
 ```

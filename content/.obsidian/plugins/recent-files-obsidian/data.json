@@ -1,16 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "debounce",
+      "path": "代码片段/debounce.md"
+    },
+    {
       "basename": "虚拟列表组件",
       "path": "代码片段/虚拟列表组件.md"
     },
     {
       "basename": "throttle",
       "path": "代码片段/throttle.md"
-    },
-    {
-      "basename": "debounce",
-      "path": "代码片段/debounce.md"
     },
     {
       "basename": "文件上传",
