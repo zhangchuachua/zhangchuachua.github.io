@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4203cdeeb5f3fd15",
+        "id": "f639d69fbb71c9f7",
         "type": "tabs",
         "children": [
           {
-            "id": "48442310191c04e9",
+            "id": "1981b1a241d328bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文件上传.md",
-                "mode": "source",
+                "file": "网络/CDN 如何决策资源请求？.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "文件上传"
+              "title": "CDN 如何决策资源请求？"
             }
           }
         ]
@@ -203,17 +203,28 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "48442310191c04e9",
+  "active": "1981b1a241d328bc",
   "lastOpenFiles": [
+    "网络/DNS 解析.md",
+    "网络/CDN 如何决策资源请求？.md",
+    "前端笔记/interview experience.md",
+    "前端笔记/网络相关.md",
+    "Vim 奇技淫巧.md",
+    "Performance API 的主要应用场景.md",
+    "index.md",
+    "turbomono 管理多包项目.md",
+    "在 raycast-extension 中使用 rust.md",
+    "疑难杂症.md",
+    "文件上传.md",
+    "网页性能指标.md",
+    "网络/HTTP 缓存.md",
+    "浏览器原理相关/浏览器如何渲染一个 html 页面？.md",
+    "浏览器原理相关",
+    "imgs/beginWork-App.png",
+    "代码片段/async-pool 异步池.md",
     "代码片段/debounce.md",
     "代码片段/虚拟列表组件.md",
     "代码片段/throttle.md",
-    "文件上传.md",
-    "网页性能指标.md",
-    "疑难杂症.md",
-    "在 raycast-extension 中使用 rust.md",
-    "index.md",
-    "Performance API 的主要应用场景.md",
     "未命名.md",
     "代码片段",
     "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md",
@@ -223,17 +234,8 @@
     "React/Fiber 如何构建 Hook 链表？.md",
     "React/如何实现 React KeepAlive 组件.md",
     "Rust 学习笔记/Rust lifetime 开飙.md",
-    "Rust 学习笔记/Rust 学习笔记.md",
-    "Rust 学习笔记/Rust 查漏补缺.md",
-    "Rust 学习笔记/rust 类型系统.md",
-    "Rust 学习笔记/如何将 Rust 编译为 wasm？.md",
-    "Astro/astro 集成 i18next.md",
-    "Astro/astro 国际化路由.md",
-    "Astro/博客搭建.md",
-    "turbomono 管理多包项目.md",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
     "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
-    "React/TODO ref 原理.md",
     "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
     "imgs/render-complete.png",
@@ -241,7 +243,6 @@
     "imgs/create-fiberRootNode-and-HostRoot.png",
     "imgs/completeWork-Count-beginWork-Static.png",
     "imgs/beginwork-text-fiber.png",
-    "imgs/beginwork-HostRoot.png",
     "网站性能",
     "网络",
     "React",

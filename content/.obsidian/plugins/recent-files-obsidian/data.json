@@ -1,8 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "CDN 如何决策资源请求？",
+      "path": "网络/CDN 如何决策资源请求？.md"
+    },
+    {
+      "basename": "DNS 解析",
+      "path": "网络/DNS 解析.md"
+    },
+    {
+      "basename": "interview experience",
+      "path": "前端笔记/interview experience.md"
+    },
+    {
+      "basename": "Vim 奇技淫巧",
+      "path": "Vim 奇技淫巧.md"
+    },
+    {
+      "basename": "Performance API 的主要应用场景",
+      "path": "Performance API 的主要应用场景.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "turbomono 管理多包项目",
+      "path": "turbomono 管理多包项目.md"
+    },
+    {
+      "basename": "在 raycast-extension 中使用 rust",
+      "path": "在 raycast-extension 中使用 rust.md"
+    },
+    {
+      "basename": "疑难杂症",
+      "path": "疑难杂症.md"
+    },
+    {
       "basename": "文件上传",
       "path": "文件上传.md"
+    },
+    {
+      "basename": "网页性能指标",
+      "path": "网页性能指标.md"
+    },
+    {
+      "basename": "HTTP 缓存",
+      "path": "网络/HTTP 缓存.md"
+    },
+    {
+      "basename": "浏览器如何渲染一个 html 页面？",
+      "path": "浏览器原理相关/浏览器如何渲染一个 html 页面？.md"
+    },
+    {
+      "basename": "beginWork-App",
+      "path": "imgs/beginWork-App.png"
+    },
+    {
+      "basename": "async-pool 异步池",
+      "path": "代码片段/async-pool 异步池.md"
     },
     {
       "basename": "debounce",
@@ -15,26 +71,6 @@
     {
       "basename": "throttle",
       "path": "代码片段/throttle.md"
-    },
-    {
-      "basename": "网页性能指标",
-      "path": "网页性能指标.md"
-    },
-    {
-      "basename": "疑难杂症",
-      "path": "疑难杂症.md"
-    },
-    {
-      "basename": "在 raycast-extension 中使用 rust",
-      "path": "在 raycast-extension 中使用 rust.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
-    },
-    {
-      "basename": "Performance API 的主要应用场景",
-      "path": "Performance API 的主要应用场景.md"
     },
     {
       "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
