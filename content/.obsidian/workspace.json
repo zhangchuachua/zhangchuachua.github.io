@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9889b546f078d794",
+        "id": "4203cdeeb5f3fd15",
         "type": "tabs",
         "children": [
           {
-            "id": "35fecba02e72f54b",
+            "id": "48442310191c04e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md",
+                "file": "代码片段/虚拟列表组件.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "useEffect, useInsertionEffect, useLayoutEffect 原理"
+              "title": "虚拟列表组件"
             }
           }
         ]
@@ -203,10 +203,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "35fecba02e72f54b",
+  "active": "207f97b4990b8ce2",
   "lastOpenFiles": [
-    "React/commit 阶段.md",
+    "代码片段/throttle.md",
+    "代码片段/debounce.md",
+    "文件上传.md",
+    "网页性能指标.md",
+    "代码片段/虚拟列表组件.md",
+    "疑难杂症.md",
+    "在 raycast-extension 中使用 rust.md",
+    "index.md",
+    "Performance API 的主要应用场景.md",
+    "未命名.md",
+    "代码片段",
     "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md",
+    "React/commit 阶段.md",
     "React/Fiber 对象.md",
     "React/为什么 useCallback 不能获取到最新的状态.md",
     "React/Fiber 如何构建 Hook 链表？.md",
@@ -220,19 +231,9 @@
     "Astro/astro 国际化路由.md",
     "Astro/博客搭建.md",
     "turbomono 管理多包项目.md",
-    "文件上传.md",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
     "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "React/TODO ref 原理.md",
-    "未命名.md",
-    "虚拟列表组件.md",
-    "React/flags.md",
-    "React/React 如何构建 Fiber 树？(React Render 阶段解析).md",
-    "React/Scheduler 原理.md",
-    "React/发生更新时如何构建 fiber 树.md",
-    "turbomono 管理多包项目.md",
-    "Astro/astro 集成 i18next.md",
-    "Astro/astro 国际化路由.md",
     "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
     "imgs/render-complete.png",
@@ -241,7 +242,6 @@
     "imgs/completeWork-Count-beginWork-Static.png",
     "imgs/beginwork-text-fiber.png",
     "imgs/beginwork-HostRoot.png",
-    "未命名",
     "网站性能",
     "网络",
     "React",

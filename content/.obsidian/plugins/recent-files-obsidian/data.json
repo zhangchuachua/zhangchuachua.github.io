@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "虚拟列表组件",
+      "path": "代码片段/虚拟列表组件.md"
+    },
+    {
+      "basename": "throttle",
+      "path": "代码片段/throttle.md"
+    },
+    {
+      "basename": "debounce",
+      "path": "代码片段/debounce.md"
+    },
+    {
+      "basename": "文件上传",
+      "path": "文件上传.md"
+    },
+    {
+      "basename": "网页性能指标",
+      "path": "网页性能指标.md"
+    },
+    {
+      "basename": "疑难杂症",
+      "path": "疑难杂症.md"
+    },
+    {
+      "basename": "在 raycast-extension 中使用 rust",
+      "path": "在 raycast-extension 中使用 rust.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "Performance API 的主要应用场景",
+      "path": "Performance API 的主要应用场景.md"
+    },
+    {
       "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
       "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
     },
