@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "文件上传",
+      "path": "文件上传.md"
+    },
+    {
       "basename": "debounce",
       "path": "代码片段/debounce.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "throttle",
       "path": "代码片段/throttle.md"
-    },
-    {
-      "basename": "文件上传",
-      "path": "文件上传.md"
     },
     {
       "basename": "网页性能指标",

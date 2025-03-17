@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码片段/debounce.md",
+                "file": "文件上传.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "debounce"
+              "title": "文件上传"
             }
           }
         ]
@@ -205,9 +205,9 @@
   },
   "active": "48442310191c04e9",
   "lastOpenFiles": [
+    "代码片段/debounce.md",
     "代码片段/虚拟列表组件.md",
     "代码片段/throttle.md",
-    "代码片段/debounce.md",
     "文件上传.md",
     "网页性能指标.md",
     "疑难杂症.md",
