@@ -18,7 +18,7 @@ share: true
     - 并发连接：一个域名可以有多个长连接；
     - 新增请求方法：PUT, DELETE, HEAD, OPTIONS, PATCH
     - 新增缓存机制：Cache-Control 和 ETag/If-None-Match
-    - 新增 range 请求头：支持断点续传
+    - 新增 range 请求头：支持文件分片下载：https://juejin.cn/post/7219140831365857317
     - 新增 Host 请求头；
     - 允许响应数据分块，有利于传输大文件；
 - HTTP/2
