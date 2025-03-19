@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "简历",
+      "path": "Templates/简历.md"
+    },
+    {
+      "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
+      "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
+    },
+    {
       "basename": "HTTP 三次握手四次挥手 + TLS 握手",
       "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
     },
@@ -93,24 +101,20 @@
       "path": "代码片段/throttle.md"
     },
     {
-      "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
-      "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
-    },
-    {
-      "basename": "commit 阶段",
-      "path": "React/commit 阶段.md"
+      "basename": "flags",
+      "path": "React/flags.md"
     },
     {
       "basename": "Fiber 对象",
       "path": "React/Fiber 对象.md"
     },
     {
-      "basename": "为什么 useCallback 不能获取到最新的状态",
-      "path": "React/为什么 useCallback 不能获取到最新的状态.md"
+      "basename": "commit 阶段",
+      "path": "React/commit 阶段.md"
     },
     {
-      "basename": "Fiber 如何构建 Hook 链表？",
-      "path": "React/Fiber 如何构建 Hook 链表？.md"
+      "basename": "为什么 useCallback 不能获取到最新的状态",
+      "path": "React/为什么 useCallback 不能获取到最新的状态.md"
     },
     {
       "basename": "如何实现 React KeepAlive 组件",
