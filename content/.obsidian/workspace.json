@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "7fd313bb3d8d383d",
+        "id": "529a4fea3912f7dc",
         "type": "tabs",
         "children": [
           {
-            "id": "e0885fb826ad0c6c",
+            "id": "0e9d2a51f7aeaacc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "unplugin-auto-import 大致流程.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "unplugin-auto-import 大致流程"
             }
           }
         ]
@@ -74,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6ab5186685ab4d4c",
@@ -189,8 +204,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e0885fb826ad0c6c",
+  "active": "0e9d2a51f7aeaacc",
   "lastOpenFiles": [
+    "unplugin-auto-import 大致流程.md",
     "Templates/简历.md",
     "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md",
     "imgs/four-handshakes.png",
@@ -222,7 +238,6 @@
     "网络/CDN 如何决策资源请求？.md",
     "网络/DNS 解析.md",
     "前端笔记/interview experience.md",
-    "前端笔记/网络相关.md",
     "浏览器原理相关",
     "imgs/beginWork-App.png",
     "代码片段",
