@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "unplugin-auto-import 大致流程",
-      "path": "unplugin-auto-import 大致流程.md"
+      "basename": "babel 插件开发",
+      "path": "前端笔记/babel 插件开发.md"
+    },
+    {
+      "basename": "turborepo 管理多包项目",
+      "path": "turborepo 管理多包项目.md"
     },
     {
       "basename": "简历",
@@ -71,10 +75,6 @@
     {
       "basename": "index",
       "path": "index.md"
-    },
-    {
-      "basename": "turbomono 管理多包项目",
-      "path": "turbomono 管理多包项目.md"
     },
     {
       "basename": "在 raycast-extension 中使用 rust",
