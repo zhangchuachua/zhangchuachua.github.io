@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "zhangchuachua.github.io",
-    ignorePatterns: ["private", "Templates", ".obsidian"],
+    ignorePatterns: ["private", "Templates", ".obsidian", "interview"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {

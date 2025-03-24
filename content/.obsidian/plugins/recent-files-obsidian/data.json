@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "如何衡量用户操作过程中是否卡顿？",
+      "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
+    },
+    {
+      "basename": "网页性能指标",
+      "path": "网页性能指标.md"
+    },
+    {
+      "basename": "Performance API 的主要应用场景",
+      "path": "Performance API 的主要应用场景.md"
+    },
+    {
+      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
+      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
+    },
+    {
+      "basename": "webpack5 默认支持哪些模块的 loader？",
+      "path": "interview/webpack5 默认支持哪些模块的 loader？.md"
+    },
+    {
+      "basename": "require 如何加载模块？",
+      "path": "前端笔记/require 如何加载模块？.md"
+    },
+    {
+      "basename": "interview experience",
+      "path": "前端笔记/interview experience.md"
+    },
+    {
       "basename": "babel 插件开发",
       "path": "前端笔记/babel 插件开发.md"
     },
@@ -33,24 +61,12 @@
       "path": "网络/HTTP 协议基础.md"
     },
     {
-      "basename": "require 如何加载模块？",
-      "path": "前端笔记/require 如何加载模块？.md"
-    },
-    {
       "basename": "浏览器如何渲染一个 html 页面？",
       "path": "浏览器原理相关/浏览器如何渲染一个 html 页面？.md"
     },
     {
-      "basename": "网页性能指标",
-      "path": "网页性能指标.md"
-    },
-    {
       "basename": "文件上传",
       "path": "文件上传.md"
-    },
-    {
-      "basename": "astro 集成 i18next",
-      "path": "Astro/astro 集成 i18next.md"
     },
     {
       "basename": "CDN 如何决策资源请求？",
@@ -61,16 +77,8 @@
       "path": "网络/DNS 解析.md"
     },
     {
-      "basename": "interview experience",
-      "path": "前端笔记/interview experience.md"
-    },
-    {
       "basename": "Vim 奇技淫巧",
       "path": "Vim 奇技淫巧.md"
-    },
-    {
-      "basename": "Performance API 的主要应用场景",
-      "path": "Performance API 的主要应用场景.md"
     },
     {
       "basename": "index",
