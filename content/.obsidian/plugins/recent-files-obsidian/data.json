@@ -1,8 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "简历",
+      "path": "Templates/简历.md"
+    },
+    {
+      "basename": "webpack5 默认支持哪些模块的 loader？",
+      "path": "interview/webpack5 默认支持哪些模块的 loader？.md"
+    },
+    {
+      "basename": "Webpack 如何创建 loader",
+      "path": "interview/Webpack 如何创建 loader.md"
+    },
+    {
+      "basename": "垃圾回收机制",
+      "path": "interview/垃圾回收机制.md"
+    },
+    {
+      "basename": "OSI 七层模型",
+      "path": "interview/OSI 七层模型.md"
+    },
+    {
+      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
+      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
+    },
+    {
       "basename": "如何衡量用户操作过程中是否卡顿？",
       "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
+    },
+    {
+      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
+      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
+    },
+    {
+      "basename": "HTTP 协议基础",
+      "path": "网络/HTTP 协议基础.md"
+    },
+    {
+      "basename": "DNS 解析",
+      "path": "网络/DNS 解析.md"
+    },
+    {
+      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
+      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
+    },
+    {
+      "basename": "TLS-handshake",
+      "path": "imgs/TLS-handshake.png"
     },
     {
       "basename": "网页性能指标",
@@ -11,14 +55,6 @@
     {
       "basename": "Performance API 的主要应用场景",
       "path": "Performance API 的主要应用场景.md"
-    },
-    {
-      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
-      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
-    },
-    {
-      "basename": "webpack5 默认支持哪些模块的 loader？",
-      "path": "interview/webpack5 默认支持哪些模块的 loader？.md"
     },
     {
       "basename": "require 如何加载模块？",
@@ -37,28 +73,12 @@
       "path": "turborepo 管理多包项目.md"
     },
     {
-      "basename": "简历",
-      "path": "Templates/简历.md"
-    },
-    {
       "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
       "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
     },
     {
-      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
-      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
-    },
-    {
-      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
-      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
-    },
-    {
       "basename": "HTTP 缓存",
       "path": "网络/HTTP 缓存.md"
-    },
-    {
-      "basename": "HTTP 协议基础",
-      "path": "网络/HTTP 协议基础.md"
     },
     {
       "basename": "浏览器如何渲染一个 html 页面？",
@@ -71,10 +91,6 @@
     {
       "basename": "CDN 如何决策资源请求？",
       "path": "网络/CDN 如何决策资源请求？.md"
-    },
-    {
-      "basename": "DNS 解析",
-      "path": "网络/DNS 解析.md"
     },
     {
       "basename": "Vim 奇技淫巧",

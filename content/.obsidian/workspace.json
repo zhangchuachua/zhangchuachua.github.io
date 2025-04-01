@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9a63f67cbb6fa5e1",
+        "id": "6f2682f7162c12a9",
         "type": "tabs",
         "children": [
           {
-            "id": "c0775dba3ccd3a91",
+            "id": "eb912d72a4987c19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interview/如何衡量用户操作过程中是否卡顿？.md",
+                "file": "Templates/简历.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "如何衡量用户操作过程中是否卡顿？"
+              "title": "简历"
             }
           }
         ]
@@ -203,8 +203,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "207f97b4990b8ce2",
+  "active": "eb912d72a4987c19",
   "lastOpenFiles": [
+    "Templates/简历.md",
+    "interview/webpack5 默认支持哪些模块的 loader？.md",
+    "interview/Webpack 如何创建 loader.md",
+    "interview/垃圾回收机制.md",
+    "interview/OSI 七层模型.md",
+    "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md",
+    "interview/如何衡量用户操作过程中是否卡顿？.md",
+    "网络/HTTP 三次握手四次挥手 + TLS 握手.md",
+    "网络/HTTP 协议基础.md",
+    "网络/DNS 解析.md",
+    "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
+    "imgs/TLS-handshake.png",
+    "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "Astro/astro 集成 i18next.md",
     "Astro/astro 国际化路由.md",
     "Astro/Astro-remote 源码阅读.md",
@@ -213,10 +226,7 @@
     "Astro/博客搭建.md",
     "Astro",
     "网页性能指标.md",
-    "interview/如何衡量用户操作过程中是否卡顿？.md",
     "Performance API 的主要应用场景.md",
-    "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md",
-    "interview/webpack5 默认支持哪些模块的 loader？.md",
     "前端笔记/require 如何加载模块？.md",
     "interview",
     "未命名.md",
@@ -225,28 +235,18 @@
     "imgs/babel-arch.png",
     "imgs/ast.png",
     "turborepo 管理多包项目.md",
-    "网络/HTTP 三次握手四次挥手 + TLS 握手.md",
-    "Templates/简历.md",
     "imgs/four-handshakes.png",
     "imgs/three-handshakes.png",
-    "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
     "网络/HTTP 缓存.md",
     "网络/HTTP 三次握手四次挥手 + TLS 握手",
     "网络/HTTP",
     "imgs/HTTP-cache.png",
-    "网络/HTTP 协议基础.md",
     "imgs/Pasted image 20250318140311.png",
     "浏览器原理相关/浏览器如何渲染一个 html 页面？.md",
-    "文件上传.md",
-    "代码片段/Astro/astro 集成 i18next.md",
-    "网络/CDN 如何决策资源请求？.md",
-    "网络/DNS 解析.md",
     "浏览器原理相关",
     "imgs/beginWork-App.png",
     "代码片段",
     "imgs/CleanShot 2025-02-06 at 00.12.34@2x.png",
-    "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
-    "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "网站性能",
     "网络",
     "React",
