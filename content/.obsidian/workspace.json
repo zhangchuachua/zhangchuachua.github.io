@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6f2682f7162c12a9",
+        "id": "346075371bd08411",
         "type": "tabs",
         "children": [
           {
-            "id": "eb912d72a4987c19",
+            "id": "2674cd712b20de10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/简历.md",
+                "file": "Nest 通关秘籍/TypeScript 中的装饰器.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "简历"
+              "title": "TypeScript 中的装饰器"
             }
           }
         ]
@@ -203,8 +203,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "eb912d72a4987c19",
+  "active": "2674cd712b20de10",
   "lastOpenFiles": [
+    "Nest 通关秘籍/TypeScript 中的装饰器.md",
     "Templates/简历.md",
     "interview/webpack5 默认支持哪些模块的 loader？.md",
     "interview/Webpack 如何创建 loader.md",
@@ -242,7 +243,6 @@
     "网络/HTTP",
     "imgs/HTTP-cache.png",
     "imgs/Pasted image 20250318140311.png",
-    "浏览器原理相关/浏览器如何渲染一个 html 页面？.md",
     "浏览器原理相关",
     "imgs/beginWork-App.png",
     "代码片段",
