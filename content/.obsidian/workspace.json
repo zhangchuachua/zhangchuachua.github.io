@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nest 通关秘籍/TypeScript 中的装饰器.md",
+                "file": "Nest 通关秘籍/在 nestjs 中使用 passport.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "TypeScript 中的装饰器"
+              "title": "在 nestjs 中使用 passport"
             }
           }
         ]
@@ -206,6 +206,7 @@
   "active": "2674cd712b20de10",
   "lastOpenFiles": [
     "Nest 通关秘籍/TypeScript 中的装饰器.md",
+    "Nest 通关秘籍/在 nestjs 中使用 passport.md",
     "Templates/简历.md",
     "interview/webpack5 默认支持哪些模块的 loader？.md",
     "interview/Webpack 如何创建 loader.md",
@@ -238,7 +239,6 @@
     "turborepo 管理多包项目.md",
     "imgs/four-handshakes.png",
     "imgs/three-handshakes.png",
-    "网络/HTTP 缓存.md",
     "网络/HTTP 三次握手四次挥手 + TLS 握手",
     "网络/HTTP",
     "imgs/HTTP-cache.png",
