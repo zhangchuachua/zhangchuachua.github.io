@@ -94,3 +94,39 @@ unimport 中支持两种方式进行操作：ast(acorn) 和 正则，下面说�
 > unimport 使用 [magic-string](https://github.com/rich-harris/magic-string) 处理字符串，这个库可以处理一些微小的字符串操作，并生成正确的 sourcemap
 
 
+请讲一下 xss 攻击：
+
+是什么：xss 攻击是一种代码注入攻击，攻击者将恶意代码注入到用户浏览器中，使之在用户浏览器执行。
+
+可能造成的危害：盗取用户信息，比如 cookie，localStroage，DOS 攻击等
+
+XSS 分为：
+
+存储型：
+注射型
+DOM 型 三种
+
+如何防御：
+
+1. 过滤输入，尽量减少拼接代码；或者对 HTML 进行转义
+2. 针对 cookie 可以使用 http-only 防止脚本访问 cookie，使用 secure 只能在 https 中传递 cookie
+3. 使用 CSP
+
+请讲一下 CSRF 攻击
+
+是什么：CSRF 攻击指的是跨站请求伪造攻击，攻击者诱导用户进入一个第三方网站，然后该网站向被攻击网站发送跨站请求。如果用户在被攻击网站中保存了登陆状态，那么攻击者就可以利用这个登陆状态，冒充用户向服务器执行一些操作。
+
+可能造成的危害：
+
+CSRF 分为：
+
+1. GET 请求，比如 `<img src="https://www.xxx.com/okok" />` 这个 img 会向被攻击网站发起 GET 请求，如果用户已经登陆了，那么就会携带其 token
+2. POST 请求，比如 `<form action="https://www.xxx.com/okok" method="post"><input type="submit" /></form>`
+3. 链接类型，比如 `<a href="http://test.com/csrf/withdraw.php?amount=1000&for=hacker" taget="_blank"></a>` 不常见因为需要点击后才攻击
+
+如何防御：
+
+1. 判断是否同源
+2. 使用 CSRF token
+3. 使用 cookie 的 samesite 属性
+4. 双重 cookie 校验
