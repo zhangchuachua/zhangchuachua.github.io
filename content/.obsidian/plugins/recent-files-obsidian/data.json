@@ -1,96 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "重点的问题",
-      "path": "interview/重点的问题.md"
-    },
-    {
       "basename": "网站性能优化",
       "path": "interview/网站性能优化.md"
-    },
-    {
-      "basename": "Fiber 对象",
-      "path": "React/Fiber 对象.md"
     },
     {
       "basename": "微前端学习笔记",
       "path": "interview/微前端学习笔记.md"
     },
     {
-      "basename": "自我介绍",
-      "path": "interview/自我介绍.md"
-    },
-    {
-      "basename": "OSI 七层模型",
-      "path": "interview/OSI 七层模型.md"
-    },
-    {
-      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
-      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
+      "basename": "性能优化-打包策略",
+      "path": "interview/性能优化-打包策略.md"
     },
     {
       "basename": "Webpack 如何创建 loader",
-      "path": "interview/Webpack 如何创建 loader.md"
+      "path": "interview/打包工具/Webpack 如何创建 loader.md"
     },
     {
-      "basename": "如何衡量用户操作过程中是否卡顿？",
-      "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
+      "basename": "vite 预构建",
+      "path": "interview/打包工具/vite 预构建.md"
     },
     {
-      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
-      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
+      "basename": "未命名",
+      "path": "未命名.md"
     },
     {
-      "basename": "HTTP 缓存",
-      "path": "网络/HTTP 缓存.md"
-    },
-    {
-      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
-      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
-    },
-    {
-      "basename": "Nest 小笔记",
-      "path": "Nest 通关秘籍/Nest 小笔记.md"
-    },
-    {
-      "basename": "Nest 通关秘籍",
-      "path": "Nest 通关秘籍/Nest 通关秘籍.md"
-    },
-    {
-      "basename": "在 nestjs 中使用 passport",
-      "path": "Nest 通关秘籍/在 nestjs 中使用 passport.md"
-    },
-    {
-      "basename": "TypeScript 中的装饰器",
-      "path": "Nest 通关秘籍/TypeScript 中的装饰器.md"
-    },
-    {
-      "basename": "简历",
-      "path": "Templates/简历.md"
-    },
-    {
-      "basename": "webpack5 默认支持哪些模块的 loader？",
-      "path": "interview/webpack5 默认支持哪些模块的 loader？.md"
+      "basename": "重点的问题",
+      "path": "interview/重点的问题.md"
     },
     {
       "basename": "垃圾回收机制",
       "path": "interview/垃圾回收机制.md"
     },
     {
+      "basename": "OSI 七层模型",
+      "path": "interview/OSI 七层模型.md"
+    },
+    {
+      "basename": "疑难杂症",
+      "path": "疑难杂症.md"
+    },
+    {
+      "basename": "如何衡量用户操作过程中是否卡顿？",
+      "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
+    },
+    {
+      "basename": "webpack5 默认支持哪些模块的 loader？",
+      "path": "interview/打包工具/webpack5 默认支持哪些模块的 loader？.md"
+    },
+    {
+      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
+      "path": "interview/打包工具/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
+    },
+    {
+      "basename": "如何在 nginx 中开启 gzip",
+      "path": "interview/如何在 nginx 中开启 gzip.md"
+    },
+    {
       "basename": "HTTP 协议基础",
       "path": "网络/HTTP 协议基础.md"
     },
     {
-      "basename": "DNS 解析",
-      "path": "网络/DNS 解析.md"
+      "basename": "珠峰 nest",
+      "path": "Nest 通关秘籍/珠峰 nest.md"
     },
     {
-      "basename": "TLS-handshake",
-      "path": "imgs/TLS-handshake.png"
+      "basename": "Nest 通关秘籍",
+      "path": "Nest 通关秘籍/Nest 通关秘籍.md"
+    },
+    {
+      "basename": "qiankun-css-sandbox-shdow-dom.png",
+      "path": "qiankun-css-sandbox-shdow-dom.png.md"
+    },
+    {
+      "basename": "简历",
+      "path": "Templates/简历.md"
     },
     {
       "basename": "网页性能指标",
       "path": "网页性能指标.md"
+    },
+    {
+      "basename": "babel 插件开发",
+      "path": "前端笔记/babel 插件开发.md"
     },
     {
       "basename": "Performance API 的主要应用场景",
@@ -105,16 +97,24 @@
       "path": "前端笔记/interview experience.md"
     },
     {
-      "basename": "babel 插件开发",
-      "path": "前端笔记/babel 插件开发.md"
-    },
-    {
       "basename": "turborepo 管理多包项目",
       "path": "turborepo 管理多包项目.md"
     },
     {
       "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
       "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
+    },
+    {
+      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
+      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
+    },
+    {
+      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
+      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
+    },
+    {
+      "basename": "HTTP 缓存",
+      "path": "网络/HTTP 缓存.md"
     },
     {
       "basename": "浏览器如何渲染一个 html 页面？",
@@ -129,6 +129,10 @@
       "path": "网络/CDN 如何决策资源请求？.md"
     },
     {
+      "basename": "DNS 解析",
+      "path": "网络/DNS 解析.md"
+    },
+    {
       "basename": "Vim 奇技淫巧",
       "path": "Vim 奇技淫巧.md"
     },
@@ -139,10 +143,6 @@
     {
       "basename": "在 raycast-extension 中使用 rust",
       "path": "在 raycast-extension 中使用 rust.md"
-    },
-    {
-      "basename": "疑难杂症",
-      "path": "疑难杂症.md"
     },
     {
       "basename": "beginWork-App",
@@ -167,6 +167,10 @@
     {
       "basename": "flags",
       "path": "React/flags.md"
+    },
+    {
+      "basename": "Fiber 对象",
+      "path": "React/Fiber 对象.md"
     },
     {
       "basename": "commit 阶段",
