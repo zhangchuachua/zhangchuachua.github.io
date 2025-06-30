@@ -6,7 +6,7 @@ tags:
 create_date: 2025-01-23 10:09
 filename: http-different.mdx
 share: true
----
+--- 
 
 - HTTP/1.0
     - 单连接：每个 HTTP 请求都建立一个 TCP 连接，请求完成后立即完毕连接；这种方式效率低下，网页中多个资源需要多次建立和关闭连接；

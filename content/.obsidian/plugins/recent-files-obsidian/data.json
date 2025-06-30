@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "自我介绍",
+      "path": "interview/自我介绍.md"
+    },
+    {
+      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
+      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
+    },
+    {
+      "basename": "Webpack 如何创建 loader",
+      "path": "interview/Webpack 如何创建 loader.md"
+    },
+    {
+      "basename": "如何衡量用户操作过程中是否卡顿？",
+      "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
+    },
+    {
+      "basename": "OSI 七层模型",
+      "path": "interview/OSI 七层模型.md"
+    },
+    {
+      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
+      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
+    },
+    {
+      "basename": "HTTP 缓存",
+      "path": "网络/HTTP 缓存.md"
+    },
+    {
+      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
+      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
+    },
+    {
+      "basename": "Nest 小笔记",
+      "path": "Nest 通关秘籍/Nest 小笔记.md"
+    },
+    {
+      "basename": "Nest 通关秘籍",
+      "path": "Nest 通关秘籍/Nest 通关秘籍.md"
+    },
+    {
       "basename": "在 nestjs 中使用 passport",
       "path": "Nest 通关秘籍/在 nestjs 中使用 passport.md"
     },
@@ -17,28 +57,8 @@
       "path": "interview/webpack5 默认支持哪些模块的 loader？.md"
     },
     {
-      "basename": "Webpack 如何创建 loader",
-      "path": "interview/Webpack 如何创建 loader.md"
-    },
-    {
       "basename": "垃圾回收机制",
       "path": "interview/垃圾回收机制.md"
-    },
-    {
-      "basename": "OSI 七层模型",
-      "path": "interview/OSI 七层模型.md"
-    },
-    {
-      "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
-      "path": "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md"
-    },
-    {
-      "basename": "如何衡量用户操作过程中是否卡顿？",
-      "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
-    },
-    {
-      "basename": "HTTP 三次握手四次挥手 + TLS 握手",
-      "path": "网络/HTTP 三次握手四次挥手 + TLS 握手.md"
     },
     {
       "basename": "HTTP 协议基础",
@@ -47,10 +67,6 @@
     {
       "basename": "DNS 解析",
       "path": "网络/DNS 解析.md"
-    },
-    {
-      "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
-      "path": "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md"
     },
     {
       "basename": "TLS-handshake",
@@ -83,10 +99,6 @@
     {
       "basename": "useEffect, useInsertionEffect, useLayoutEffect 原理",
       "path": "React/useEffect, useInsertionEffect, useLayoutEffect 原理.md"
-    },
-    {
-      "basename": "HTTP 缓存",
-      "path": "网络/HTTP 缓存.md"
     },
     {
       "basename": "浏览器如何渲染一个 html 页面？",

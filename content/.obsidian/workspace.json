@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "346075371bd08411",
+        "id": "87699c46dec1d36b",
         "type": "tabs",
         "children": [
           {
-            "id": "2674cd712b20de10",
+            "id": "bd06c6986df1d3c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nest 通关秘籍/在 nestjs 中使用 passport.md",
+                "file": "interview/自我介绍.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "在 nestjs 中使用 passport"
+              "title": "自我介绍"
             }
           }
         ]
@@ -203,21 +203,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2674cd712b20de10",
+  "active": "bd06c6986df1d3c4",
   "lastOpenFiles": [
-    "Nest 通关秘籍/TypeScript 中的装饰器.md",
+    "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md",
+    "interview/自我介绍.md",
+    "interview/Webpack 如何创建 loader.md",
+    "interview/如何衡量用户操作过程中是否卡顿？.md",
+    "interview/OSI 七层模型.md",
+    "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
+    "网络/HTTP 缓存.md",
+    "网络/HTTP 三次握手四次挥手 + TLS 握手.md",
+    "Nest 通关秘籍/Nest 小笔记.md",
+    "Nest 通关秘籍/Nest 通关秘籍.md",
     "Nest 通关秘籍/在 nestjs 中使用 passport.md",
+    "Nest 通关秘籍/TypeScript 中的装饰器.md",
     "Templates/简历.md",
     "interview/webpack5 默认支持哪些模块的 loader？.md",
-    "interview/Webpack 如何创建 loader.md",
     "interview/垃圾回收机制.md",
-    "interview/OSI 七层模型.md",
-    "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md",
-    "interview/如何衡量用户操作过程中是否卡顿？.md",
-    "网络/HTTP 三次握手四次挥手 + TLS 握手.md",
     "网络/HTTP 协议基础.md",
     "网络/DNS 解析.md",
-    "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
     "imgs/TLS-handshake.png",
     "imgs/CleanShot 2025-02-06 at 00.11.33@2x.png",
     "Astro/astro 集成 i18next.md",
@@ -231,12 +235,8 @@
     "Performance API 的主要应用场景.md",
     "前端笔记/require 如何加载模块？.md",
     "interview",
-    "未命名.md",
-    "前端笔记/interview experience.md",
-    "前端笔记/babel 插件开发.md",
     "imgs/babel-arch.png",
     "imgs/ast.png",
-    "turborepo 管理多包项目.md",
     "imgs/four-handshakes.png",
     "imgs/three-handshakes.png",
     "网络/HTTP 三次握手四次挥手 + TLS 握手",
