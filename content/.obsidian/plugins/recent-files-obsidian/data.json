@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "重点的问题",
+      "path": "interview/重点的问题.md"
+    },
+    {
+      "basename": "网站性能优化",
+      "path": "interview/网站性能优化.md"
+    },
+    {
+      "basename": "Fiber 对象",
+      "path": "React/Fiber 对象.md"
+    },
+    {
+      "basename": "微前端学习笔记",
+      "path": "interview/微前端学习笔记.md"
+    },
+    {
       "basename": "自我介绍",
       "path": "interview/自我介绍.md"
+    },
+    {
+      "basename": "OSI 七层模型",
+      "path": "interview/OSI 七层模型.md"
     },
     {
       "basename": "webpack 与 vite 对于样式文件和 ts 文件处理上的区别",
@@ -15,10 +35,6 @@
     {
       "basename": "如何衡量用户操作过程中是否卡顿？",
       "path": "interview/如何衡量用户操作过程中是否卡顿？.md"
-    },
-    {
-      "basename": "OSI 七层模型",
-      "path": "interview/OSI 七层模型.md"
     },
     {
       "basename": "HTTP-1, 1.1, 2, 3 有什么比区别",
@@ -151,10 +167,6 @@
     {
       "basename": "flags",
       "path": "React/flags.md"
-    },
-    {
-      "basename": "Fiber 对象",
-      "path": "React/Fiber 对象.md"
     },
     {
       "basename": "commit 阶段",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interview/自我介绍.md",
+                "file": "React/Fiber 对象.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "自我介绍"
+              "title": "Fiber 对象"
+            }
+          },
+          {
+            "id": "d5999f01e4db852b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "interview/重点的问题.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "重点的问题"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,11 +228,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "bd06c6986df1d3c4",
+  "active": "d5999f01e4db852b",
   "lastOpenFiles": [
-    "interview/重点的问题.md",
     "interview/网站性能优化.md",
+    "interview/重点的问题.md",
+    "React/Fiber 对象.md",
     "interview/微前端学习笔记.md",
+    "interview/自我介绍.md",
+    "interview/OSI 七层模型.md",
     "interview/如何在 nginx 中开启 gzip.md",
     "imgs/wujie-iframe-sandbox-html.png",
     "imgs/qiankun-css-sandbox.png",
@@ -217,10 +245,8 @@
     "imgs/micro-app-css-sandbox.png",
     "Nest 通关秘籍/珠峰 nest.md",
     "interview/webpack 与 vite 对于样式文件和 ts 文件处理上的区别.md",
-    "interview/自我介绍.md",
     "interview/Webpack 如何创建 loader.md",
     "interview/如何衡量用户操作过程中是否卡顿？.md",
-    "interview/OSI 七层模型.md",
     "网络/HTTP-1, 1.1, 2, 3 有什么比区别.md",
     "网络/HTTP 缓存.md",
     "网络/HTTP 三次握手四次挥手 + TLS 握手.md",
@@ -238,7 +264,6 @@
     "Astro/astro 集成 i18next.md",
     "Astro/astro 国际化路由.md",
     "Astro/Astro-remote 源码阅读.md",
-    "Astro/Astro 加载器 API.md",
     "Astro",
     "interview",
     "imgs/babel-arch.png",
